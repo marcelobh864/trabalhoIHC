@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			margin: 0;
+   			padding: 0;
+		}
+		#corpo{
+			position: absolute;
+			height: 100%;
+  			width: 100%;
+		}
+		#logo{
+			position: relative;
+			float: left;
+			height: 19%;
+  			width: 20%;
+		}
+		.imagem{
+			height: 80%;
+			width: 80%;
+		}
+		#imagem2{
+			padding-top: 4%;
+			height: 38%;
+			width: 61%;
+		}
+		#topo{
+			float: left;
+			position: relative;
+			height: 19%;
+  			width: 80%;
+  			background-color:#000000;
+		}
+		#topo h1{
+			color: #daa520;
+			font-size: 43px;
+			font-style:none;
+			text-align: center;
+			margin-top: 1%;
+			font-family: "Century", Helvetica, sans-serif;
+			letter-spacing: 0.2em;
+		}
+		#lateral{
+			float: left;
+			position: relative;
+			height: 81%;
+  			width: 20%;
+  			background-color:#000000;
+		}
+		#centro{
+			float: left;
+			position: relative;
+			height: 80%;
+  			width: 80%;
+		}
+		#texto{
+			text-align: center;
+			text-decoration-style; 
+			font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+			font-style: italic;
+			font-weight: bold;
+			margin-left: 72%;
+			margin-top: -8%;
+		}
+		ul{
+			margin: 0; padding: 0;
+			padding-top: 20%;
+		}
+		li{
+			list-style: none;
+		}
+		li a{
+			text-align: center;
+			display: block;
+			text-decoration: none;
+			margin-bottom: 15%;
+			padding: 5px 3px;
+			color:  #daa520;
+			font-size: 17px;
+			font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+		}
+		li a:hover{
+		 font-weight: bold;
+		 text-decoration: underline;
+		}
+		#menu ul {
+			text-align: center;
+			padding:0px;
+			margin:0px;
+			margin-top: -23px;
+			float: left;
+			width: 100%;
+			list-style:none;
+		}
+ 
+		#menu ul li { display: inline; }
+ 
+		#menu ul li a {
+			color:  #daa520;
+			font-size: 21px;
+			text-decoration: none;
+			padding-left: 8%;
+			padding-right: 3%;
+			float:left;
+		}
+ 
+		#menu ul li a:hover {
+			font-weight: bold;
+		 text-decoration: underline;
+		}
+	</style>
+</head>
+<body onload="carregar()">
+	<div id="corpo">
+		<div id="logo"><center><a href="index.html"><img class="imagem" src="brasao1.jpg"/></a></center></div>
+		<div id="topo">
+			<h1>Feiras e mercados de Ouro Preto</h1>
+			<div id="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="pontosturisticos.html">Pontos Turisticos</a></li>
+					<li><a href="gastronomia.html">Gastronomia</a></li>
+					<li><a href="restauranteMineiro.html">Restaurantes e Bares </a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="lateral">
+			<ul>
+				<li><a href="#"onclick="carregar();"> Feiras e Mercados Home</a></li>
+				<li><a href="#"onclick="feiraAfonsoPena();">Feira De Pedra Sabão Do Largo De Coimbra
+</a></li>
+				<li><a href="#"onclick="feiraLargoCoimbra();">Cachaçaria Milagre de Minas</a></li>
+				<li><a href="#"onclick="feiraPocosCaldas();">Rocalha Artesanatos</a></li>
+				<li><a href="#"onclick="mercadoBeloHorizonte();">Josimar Guimarães Escritório de Arte</a></li>
+			</ul>
+		</div>
+		<div id="centro">
+			<center><img id="imagem2" src="feiraIndex.jpg"/></center>
+			<p id="texto">"Oh! Minas Gerais <br>Oh! Minas Gerais<br>Quem te conhece não esquece jamais<br>Oh! Minas Gerais"<br>Tonico e Tinoco</p>
+			<p id="casoUso"></p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function feiraAfonsoPena() {
+			document.getElementById("imagem2").style.position = 'absolute';
+			document.getElementById('imagem2').src = "feira1.jpg";
+			document.getElementById("imagem2").style.top = "1%";
+			document.getElementById("imagem2").style.left = "10%";
+			document.getElementById("imagem2").style.height = "76%";
+			document.getElementById("imagem2").style.width = "54";
+		    document.getElementById("texto").innerHTML="Feira do Largo de Coimbra, em Ouro Preto<br><br>Localizada ao lado da Igreja de São Francisco de Assis, tem barraquinhas com peças de diferentes tamanhos feitos artesanalmente em pedra-sabão, de porta-joias a xícaras, vasos, jarras e até jogos de tabuleiro, reúne todos os dias mais de 50 expositores. A pedra sabão, item típico encontrado na região é extraída desde o século XVIII das jazidas de Santa Rita de Ouro Preto, e é um material versátil com que se fazem desde joias a panelas. A feira acontece diariamente das 7h às 19h.";
+		   document.getElementById("texto").style.position = 'absolute';
+		    document.getElementById("texto").style.top = "28%";
+		    document.getElementById("texto").style.left = "2%";
+		    document.getElementById("texto").style.right = "5%";
+		    document.getElementById("texto").style.fontSize="14px";
+		}
+		function feiraLargoCoimbra() {
+		    document.getElementById('imagem2').src = "feira2.jpeg";
+		    document.getElementById("texto").innerHTML="Cachaçaria Milagre de Minas<br><br>Se você aprecia uma boa cachaça ou gosta de geleias e mostardas especiais, não pode deixar de conhecer a Cachaçaria Milagre de Minas em Ouro Preto.<br>Praça Tiradentes, 130, Centro - Ouro Preto, MG";
+		    document.getElementById("texto").style.position = 'absolute';
+		    document.getElementById("texto").style.top = "28%";
+		    document.getElementById("texto").style.left = "2%";
+		    document.getElementById("texto").style.right = "5%";
+		    document.getElementById("texto").style.fontSize="14px";
+		    document.getElementById("imagem2").style.position = 'absolute';
+			document.getElementById("imagem2").style.top = "1%";
+			document.getElementById("imagem2").style.left = "10%";
+			document.getElementById("imagem2").style.height = "76%";
+			document.getElementById("imagem2").style.width = "54";
+		}
+		function feiraPocosCaldas() {
+		    document.getElementById('imagem2').src = "feira3.jpg";
+		    document.getElementById("texto").innerHTML="Rocalha Artesanatos<br><br>Desde a sua fundação, em 1994, a Rocalha Artesanatos prioriza a  mineiridade em cada um de seus produtos: arte, artesanato, doces, cachaças e um pouco do espírito criativo das pessoas dessa terra. Com uma variedade de produtos próprios, desenvolvidos em parceria com artistas locais, a loja, há 25 anos, dispõe de lembranças de formas tão variadas que surpreende quem quer levar um pedacinho dessa cidade para casa.<br>Esse lugar pode ser encontrado pertinho da Praça Tiradentes, em dois pontos: um na Rua do Ouvidor, ao lado do Centro Cultural e Turístico do Sistema FIEMG, e outro na travessa entre o Museu da Inconfidência e a Igreja de São Francisco de Assis";
+		    document.getElementById("texto").style.position = 'absolute';
+		    document.getElementById("texto").style.top = "28%";
+		    document.getElementById("texto").style.left = "2%";
+		    document.getElementById("texto").style.right = "5%";
+		    document.getElementById("texto").style.fontSize="14px";
+		    document.getElementById("imagem2").style.position = 'absolute';
+			document.getElementById("imagem2").style.top = "1%";
+			document.getElementById("imagem2").style.left = "10%";
+			document.getElementById("imagem2").style.height = "76%";
+			document.getElementById("imagem2").style.width = "54";
+		}
+		function mercadoBeloHorizonte() {
+		    document.getElementById('imagem2').src = "feira4.jpg";
+		    document.getElementById("texto").innerHTML="Josimar Guimarães Escritório de Arte<br><br>A galeria de arte de Josimar Guimarães é um ótimo local para visitar e também comprar obras de arte ou objetos antigos. Os quadros e as peças de vários artistas estão expostas em quatro ambientes. A receptividade de Josimar não poderia ser melhor: simpático, atencioso e com grande experiência na área em que atua. A localização é excelente, na Rua Conde de Bobadela (Rua Direita), 124 - acima do Restaurante Calabouço. Recomendo uma visita ao local!";
+		    document.getElementById("texto").style.position = 'absolute';
+		    document.getElementById("texto").style.top = "28%";
+		    document.getElementById("texto").style.left = "2%";
+		    document.getElementById("texto").style.right = "5%";
+		    document.getElementById("texto").style.fontSize="14px";
+		    document.getElementById("imagem2").style.position = 'absolute';
+			document.getElementById("imagem2").style.top = "1%";
+			document.getElementById("imagem2").style.left = "10%";
+			document.getElementById("imagem2").style.height = "76%";
+			document.getElementById("imagem2").style.width = "54";
+		}
+		function carregar() {
+		    document.getElementById('imagem2').src = "feiraIndex.jpg";
+		    document.getElementById("texto").innerHTML="Feira de Mangaio<br>Mariana Aydar<br><br>  Fumo de rolo arreio de cangalha Eu tenho pra vender, quem quer comprar Bolo de milho broa e cocada Eu tenho pra vender, quem quer comprar Pé de moleque, alecrim, canela Moleque sai daqui me deixa trabalhar E Zé saiu correndo pra feira de pássaros E foi passo-voando pra todo lugar Tinha uma vendinha no canto da rua Onde o mangaieiro ia se animar Tomar uma bicada com lambu assado E olhar pra Maria do Joá Cabresto de cavalo e rabichola Eu tenho pra vender, quem quer comprar Farinha rapadura e graviola Eu tenho pra vender.";
+		    document.getElementById("texto").style.position = 'absolute';
+		    document.getElementById("texto").style.top = "28%";
+		    document.getElementById("texto").style.left = "2%";
+		    document.getElementById("texto").style.right = "5%";
+		    document.getElementById("texto").style.fontSize="14px";
+		    document.getElementById("imagem2").style.position = 'absolute';
+			document.getElementById("imagem2").style.top = "1%";
+			document.getElementById("imagem2").style.left = "10%";
+			document.getElementById("imagem2").style.height = "76%";
+			document.getElementById("imagem2").style.width = "54";
+		}
+	</script>
+</body>
+</html>

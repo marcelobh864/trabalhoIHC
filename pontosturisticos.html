@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			margin: 0;
+   			padding: 0;
+		}
+		#corpo{
+			position: absolute;
+			height: 100%;
+  			width: 100%;
+		}
+		#logo{
+			position: relative;
+			float: left;
+			height: 19%;
+  			width: 20%;
+		}
+		.imagem{
+			height: 80%;
+			width: 80%;
+		}
+		#imagem2{
+			padding-top: 4%;
+			height: 38%;
+			width: 61%;
+		}
+		#topo{
+			float: left;
+			position: relative;
+			height: 19%;
+  			width: 80%;
+  			background-color:#000000;
+		}
+		#topo h1{
+			color: #daa520;
+			font-size: 43px;
+			font-style:none;
+			text-align: center;
+			margin-top: 1%;
+			font-family: "Century", Helvetica, sans-serif;
+			letter-spacing: 0.2em;
+		}
+		#lateral{
+			float: left;
+			position: relative;
+			height: 81%;
+  			width: 20%;
+  			background-color:#000000;
+		}
+		#centro{
+			float: left;
+			position: relative;
+			height: 80%;
+  			width: 80%;
+		}
+		#texto{
+			text-align: center;
+			text-decoration-style; 
+			font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+			font-style: italic;
+			font-weight: bold;
+			margin-left: 72%;
+			margin-top: -8%;
+		}
+		ul{
+			margin: 0; padding: 0;
+			padding-top: 20%;
+		}
+		li{
+			list-style: none;
+		}
+		li a{
+			text-align: center;
+			display: block;
+			text-decoration: none;
+			margin-bottom: 10%;
+			padding: 5px 3px;
+			color:  #daa520;
+			font-size: 17px;
+			font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+		}
+		li a:hover{
+		 font-weight: bold;
+		 text-decoration: underline;
+		}
+		#menu ul {
+			text-align: center;
+			padding:0px;
+			margin:0px;
+			margin-top: -23px;
+			float: left;
+			width: 100%;
+			list-style:none;
+		}
+ 
+		#menu ul li { display: inline; }
+ 
+		#menu ul li a {
+			color:  #daa520;
+			font-size: 21px;
+			text-decoration: none;
+			padding-left: 7%;
+			padding-right: 3%;
+			float:left;
+		}
+ 
+		#menu ul li a:hover {
+			font-weight: bold;
+		 text-decoration: underline;
+		}
+	</style>
+</head>
+<body onload="carregar()">
+	<div id="corpo">
+		<div id="logo"><center><a href="index.html"><img class="imagem" src="brasao1.jpg"/></a></center></div>
+		<div id="topo">
+			<h1> Pontos Turisticos</h1>
+			<div id="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gastronomia.html">Gastronomia</a></li>
+					<li><a href="feirasAstesanatos.html">Feiras e Mercados</a></li>
+					<li><a href="restauranteMineiro.html">Restaurantes e Bares</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="lateral">
+			<ul>
+				<li><a href="#"onclick="carregar();"> Pontos Turisticos Home</a></li>
+				<li><a href="#"onclick="cidadeOuroPreto();">Igreja de Nossa Senhora do Carmo</a></li>
+				<li><a href="#"onclick="cidadeDiamantina();">Igreja de Nossa Senhora do Pilar</a></li>
+				<li><a href="#"onclick="cidadeSabara();">Parque das Andorinhas de Ouro Preto</a></li>
+				<li><a href="#"onclick="cidadeSaoJoaoDelRey();">Trem da Vale Ouro Preto – Maria Fumaça</a></li>
+				<li><a href="#"onclick="cidadeSerro();">Mina da Passagem</a></li>
+			</ul>
+		</div>
+		<div id="centro">
+			<center><img id="imagem2" src="feira1.jpg"/></center>
+			<p id="texto">Turismo em Ouro Preto<br><br>Ouro Preto vive intensamente para o turismo e a cidade está sempre repleta de visitantes. As atrações são muitas e não será difícil ocupar um dia — ou vários — conhecendo os pontos turísticos da região. Grande parte dos locais a serem visitados estão intimamente ligados ao período em que Ouro Preto viveu o Ciclo do Ouro. O auge da corrida em busca de metais e pedras preciosas aconteceu entre os séculos XVIII e XIX, período do qual datam também as construções coloniais, igrejas e minas que são as principais atrações de Ouro Preto.</p>
+			<p id="casoUso"></p>
+		</div>
+		
+			
+		
+	</div>
+	<script type="text/javascript">
+		function cidadeOuroPreto() {
+			document.getElementById("imagem2").style.position = 'absolute';
+			document.getElementById("imagem2").style.top = "1%";
+			document.getElementById("imagem2").style.left = "8%";
+			document.getElementById("imagem2").style.height = "76%";
+			document.getElementById("imagem2").style.width = "54";
+		  document.getElementById('imagem2').src = "turismo1.jpg";
+		  document.getElementById("texto").innerHTML="Igreja de Nossa Senhora do Carmo<br><br>Com o projeto original de outro grande arquiteto, a Igreja de Nossa Senhora do Carmo foi primeiramente traçada por Manuel Francisco Lisboa.<br>Porém, depois de pronta o projetou recebeu algumas modificações, feitas pelo seu filho Antônio Francisco Lisboa, mais conhecido como Aleijadinho.<br>Isso mesmo, Aleijadinho deixou também nessa Igreja os seus traços que marcaram a arte colonial brasileira.<br>Vale a pena visitar a Igreja de Nossa Senhora do Carmo pois bem ao lado dela está o local onde Aleijadinho viveu seus últimos anos de vida e onde hoje é um museu.";
+		  document.getElementById("texto").style.top = "30%";
+		  document.getElementById("texto").style.left = "1%";
+		  document.getElementById("texto").style.right = "4%";
+		  document.getElementById("texto").style.fontSize="14px";
+		}
+		function cidadeDiamantina() {
+		    document.getElementById('imagem2').src = "turismo2.jpeg";
+		    document.getElementById("texto").innerHTML="Igreja de Nossa Senhora do Pilar<br><br>Para fechar a série de Igrejas entre os pontos de interesse de Ouro Preto não poderíamos deixar de falar sobre a Basílica de Nossa Senhora do Pilar.<br>Ela também tem agregada a si um museu de Arte Sacra e é uma das principais Igrejas do Brasil.<br>Entre as Igrejas de Ouro Preto, é a que mais possui riquezas, afinal, no seu interior tem mais de 450 quilos em ouro.";
+		  document.getElementById("texto").style.position = 'absolute';
+		    document.getElementById("texto").style.top = "30%";
+		    document.getElementById("texto").style.left = "1%";
+		    document.getElementById("texto").style.right = "4%";
+		    document.getElementById("texto").style.fontSize="14px";
+		    document.getElementById("imagem2").style.position = 'absolute';
+			document.getElementById("imagem2").style.top = "1%";
+			document.getElementById("imagem2").style.left = "8%";
+			document.getElementById("imagem2").style.height = "76%";
+			document.getElementById("imagem2").style.width = "54";
+		}
+		function cidadeSabara() {
+		    document.getElementById('imagem2').src = "turismo3.jpg";
+		    document.getElementById("texto").innerHTML="Parque das Andorinhas de Ouro Preto.<br><br>Com as paisagens da Mata Atlântica e do Cerrado o Parque das Andorinhas de Ouro Preto oferece várias opções de trilhas com quedas d’água, cachoeiras e ambientes legais para você curtir um dia na natureza.<br>Para completar, a entrada é gratuita, possui seguranças e guias que trabalham no local e orientam os turistas.";
+		  document.getElementById("texto").style.position = 'absolute';
+		    document.getElementById("texto").style.top = "30%";
+		    document.getElementById("texto").style.left = "1%";
+		    document.getElementById("texto").style.right = "4%";
+		    document.getElementById("texto").style.fontSize="14px";
+		    document.getElementById("imagem2").style.position = 'absolute';
+			document.getElementById("imagem2").style.top = "1%";
+			document.getElementById("imagem2").style.left = "8%";
+			document.getElementById("imagem2").style.height = "76%";
+			document.getElementById("imagem2").style.width = "54";
+		}
+		function cidadeSaoJoaoDelRey() {
+		    document.getElementById('imagem2').src = "turismo4.jpg";
+		    document.getElementById("texto").innerHTML="Trem da Vale Ouro Preto – Maria Fumaça<br><br>Esse é um dos passeios mais procurados em Ouro Preto, o trem da vale oferece um passeio que vai de Ouro Preto até a cidade de Mariana e oferece uma experiência única.<br>O trem é encantador e nos leva por uma viagem no tempo, regressando até o ciclo do ouro e cruzando a estrada utilizada na época, com paisagens encantadoras em um vagão panorâmico.";
+		  	document.getElementById("texto").style.position = 'absolute';
+		    document.getElementById("texto").style.top = "30%";
+		    document.getElementById("texto").style.left = "1%";
+		    document.getElementById("texto").style.right = "4%";
+		    document.getElementById("texto").style.fontSize="14px";
+		    document.getElementById("imagem2").style.position = 'absolute';
+			document.getElementById("imagem2").style.top = "1%";
+			document.getElementById("imagem2").style.left = "8%";
+			document.getElementById("imagem2").style.height = "76%";
+			document.getElementById("imagem2").style.width = "54";
+		}
+		function cidadeSerro() {
+		    document.getElementById('imagem2').src = "turismo5.jpg";
+		    document.getElementById("texto").innerHTML="Mina da Passagem<br><br>Bom, a mina na verdade fica no território de Mariana, mas são pouquíssimos km que separam a Mina da Passagem do centro de Ouro Preto.<br>Essa atração turística vale a pena porque ela é uma mina de ouro diferente das que encontramos no centro histórico. Ela foi escavada posteriormente, com um processo mais industrializado e hoje é considerada a maior mina de ouro aberta a visitação no mundo.";
+		  document.getElementById("texto").style.position = 'absolute';
+		    document.getElementById("texto").style.top = "30%";
+		    document.getElementById("texto").style.left = "1%";
+		    document.getElementById("texto").style.right = "4%";
+		    document.getElementById("texto").style.fontSize="14px";
+		    document.getElementById("imagem2").style.position = 'absolute';
+			document.getElementById("imagem2").style.top = "1%";
+			document.getElementById("imagem2").style.left = "8%";
+			document.getElementById("imagem2").style.height = "76%";
+			document.getElementById("imagem2").style.width = "54";
+		}
+		function carregar() {
+		    document.getElementById('imagem2').src = "ouropreto.jpg";
+		    document.getElementById("texto").innerHTML="Turismo em Ouro Preto<br><br>Ouro Preto vive intensamente para o turismo e a cidade está sempre repleta de visitantes. As atrações são muitas e não será difícil ocupar um dia — ou vários — conhecendo os pontos turísticos da região. Grande parte dos locais a serem visitados estão intimamente ligados ao período em que Ouro Preto viveu o Ciclo do Ouro. O auge da corrida em busca de metais e pedras preciosas aconteceu entre os séculos XVIII e XIX, período do qual datam também as construções coloniais, igrejas e minas que são as principais atrações de Ouro Preto.";
+		    document.getElementById("casoUso").innerHTML= " ";
+		    document.getElementById("texto").style.position = 'absolute';
+		    document.getElementById("texto").style.top = "30%";
+		    document.getElementById("texto").style.left = "1%";
+		    document.getElementById("texto").style.right = "4%";
+		    document.getElementById("texto").style.fontSize="14px";
+		    document.getElementById("imagem2").style.position = 'absolute';
+			document.getElementById("imagem2").style.top = "1%";
+			document.getElementById("imagem2").style.left = "8%";
+			document.getElementById("imagem2").style.height = "76%";
+			document.getElementById("imagem2").style.width = "54";
+		}
+	</script>
+</body>
+</html>
