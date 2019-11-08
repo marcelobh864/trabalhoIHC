@@ -22,6 +22,9 @@
 			height: 80%;
 			width: 80%;
 		}
+		.espacamendo{
+			letter-spacing: 0.2em;
+		}
 		#imagem2{
 			padding-top: 4%;
 			height: 38%;
@@ -57,13 +60,12 @@
   			width: 80%;
 		}
 		#texto{
-			text-align: center;
+			text-align: justify;
 			text-decoration-style; 
 			font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
 			font-style: italic;
-			font-weight: bold;
 			margin-left: 72%;
-			margin-top: -9%;
+			margin-top: -10%;
 		}
 		ul{
 			margin: 0; padding: 0;
@@ -152,7 +154,7 @@
 			document.getElementById("imagem2").style.height = "76%";
 			document.getElementById("imagem2").style.width = "54";
 		  document.getElementById('imagem2').src = "restaurante1.jpg";
-		  document.getElementById("texto").innerHTML="Bené da Flauta<br><br>Primeiramente, famoso restaurante em Ouro Preto, o Bené da Flauta encanta pelo sabor e pela vista. Isso porque, se você pegar uma mesa no segundo andar, terá visão panorâmica da cidade. Assim, entre as delícias mineiras servidas lá, adoramos o tutu de feijão com torresmo e couve.<br>Estilo: romântico<br>Faixa de preço: média de R$ 80<br>Endereço: rua São Francisco de Assis, 32<br>Funcionamento: diariamente, das 12h às 23h45";
+		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Bené da Flauta</p></strong>Primeiramente, famoso restaurante em Ouro Preto, o Bené da Flauta encanta pelo sabor e pela vista. Isso porque, se você pegar uma mesa no segundo andar, terá visão panorâmica da cidade. Assim, entre as delícias mineiras servidas lá, adoramos o tutu de feijão com torresmo e couve.<br>Estilo: romântico<br>Faixa de preço: média de R$ 80<br>Endereço: rua São Francisco de Assis, 32<br>Funcionamento: diariamente, das 12h às 23h45";
 		  document.getElementById("texto").style.position = 'absolute';
 		  document.getElementById("texto").style.top = "30%";
 		  document.getElementById("texto").style.left = "1%";
@@ -161,7 +163,7 @@
 		}
 		function donaLucinha() {
 		  document.getElementById('imagem2').src = "restaurante2.jpg";
-		  document.getElementById("texto").innerHTML="Casa do Ouvidor<br><br>Essa é uma das mais tradicionais opções de onde comer em Ouro Preto. E não é à toa, pois tanto o ambiente à luz de velas quanto a cozinha são bastante convidativos. Assim, se quiser experimentar um prato típico da culinária mineira, peça o feijão tropeiro.<br>Estilo: romântico<br>Faixa de preço: média de R$ 70<br>Endereço: rua Direita, 42<br>Funcionamento: seg. a sáb., das 11h às 22h; dom., das 11h às 16h";
+		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Casa do Ouvidor</p></strong>Essa é uma das mais tradicionais opções de onde comer em Ouro Preto. E não é à toa, pois tanto o ambiente à luz de velas quanto a cozinha são bastante convidativos. Assim, se quiser experimentar um prato típico da culinária mineira, peça o feijão tropeiro.<br>Estilo: romântico<br>Faixa de preço: média de R$ 70<br>Endereço: rua Direita, 42<br>Funcionamento: seg. a sáb., das 11h às 22h; dom., das 11h às 16h";
 		  document.getElementById("texto").style.position = 'absolute';
 		  document.getElementById("texto").style.top = "30%";
 		  document.getElementById("texto").style.left = "1%";
@@ -175,7 +177,7 @@
 		}
 		function mariaDasTrancas() {
 		  document.getElementById('imagem2').src = "restaurante3.jpg";
-		  document.getElementById("texto").innerHTML="Café Geraes/Escadabaixo<br><br>Um só endereço, mas 2 restaurantes em Ouro Preto. Assim, no Café Geraes, você se servirá de almoço e jantar em ambiente rústico, com música de piano ao vivo às quintas, sextas e sábados a partir das 20h.<br>Por outro lado, no andar inferior, há o Escadabaixo, bar com ambiente ideal para happy hour, opções de petiscos e bebidas.<br>Estilo: Café Geraes (romântico) / Ecadabaixo (casual)<br>Faixa de preço: média de R$ 50<br>Endereço: rua Conde de Bobadela, 122<br>Funcionamento: diariamente, das 12h às 0h (ou até o último cliente, como dizem por lá)";
+		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Café Geraes/Escadabaixo</p></strong>Um só endereço, mas 2 restaurantes em Ouro Preto. Assim, no Café Geraes, você se servirá de almoço e jantar em ambiente rústico, com música de piano ao vivo às quintas, sextas e sábados a partir das 20h.<br>Por outro lado, no andar inferior, há o Escadabaixo, bar com ambiente ideal para happy hour, opções de petiscos e bebidas.<br>Estilo: Café Geraes (romântico) / Ecadabaixo (casual)<br>Faixa de preço: média de R$ 50<br>Endereço: rua Conde de Bobadela, 122<br>Funcionamento: diariamente, das 12h às 0h (ou até o último cliente, como dizem por lá)";
 		  document.getElementById("texto").style.position = 'absolute';
 		  document.getElementById("texto").style.top = "30%";
 		  document.getElementById("texto").style.left = "1%";
@@ -189,7 +191,7 @@
 		}
 		function xicoDaKafua() {
 		  document.getElementById('imagem2').src = "restaurante4.jpg";
-		  document.getElementById("texto").innerHTML="Senhora Gastronomia<br><br>Anexo ao hotel Solar do Rosário, esse restaurante combina culinária tradicional mineira com sofisticação gastronômica. Dessa forma, o ambiente rústico, a adega de vinho subterrânea (aberta a visitas agendadas) e um scotch bar completam o ambiente. Entre as sugestões: carne de sol de filé mignon e joelho de porco.<br>Além disso, servem menu executivo no almoço a preço fixo: R$ 37.<br>Estilo: romântico<br>Faixa de preço: R$ 80<br>Endereço: rua Getúlio Vargas, 270, Rosário (anexo ao Hotel Solar do Rosário)<br>Funcionamento: diariamente<br>Café da manhã: das 7h às 10h<br>Almoço: das 12h às 15h<br>Chá da tarde: das 19h às 22h<br>Jantar: das 15h30 às 17h30";
+		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Senhora Gastronomia</p></strong>Anexo ao hotel Solar do Rosário, esse restaurante combina culinária tradicional mineira com sofisticação gastronômica. Dessa forma, o ambiente rústico, a adega de vinho subterrânea (aberta a visitas agendadas) e um scotch bar completam o ambiente. Entre as sugestões: carne de sol de filé mignon e joelho de porco.<br>Além disso, servem menu executivo no almoço a preço fixo: R$ 37.<br>Estilo: romântico<br>Faixa de preço: R$ 80<br>Endereço: rua Getúlio Vargas, 270, Rosário (anexo ao Hotel Solar do Rosário)<br>Funcionamento: diariamente<br>Café da manhã: das 7h às 10h<br>Almoço: das 12h às 15h<br>Chá da tarde: das 19h às 22h<br>Jantar: das 15h30 às 17h30";
 		  document.getElementById("texto").style.position = 'absolute';
 		  document.getElementById("texto").style.top = "30%";
 		  document.getElementById("texto").style.left = "1%";
@@ -203,7 +205,7 @@
 		}
 		function casaCheia() {
 		  document.getElementById('imagem2').src = "restaurante5.jpg";
-		  document.getElementById("texto").innerHTML="Tenente Pimenta Rock Bar<br><br>Esse pub em estilo irlandês com referências militares é bom para quem gosta de curtir até tarde da noite. Assim, o cardápio inclui chopes e cervejas artesanais, bem como hambúrgueres de diversos tipos. Portanto, um dos diferenciais é a opção vegetariana.<br>Estilos: vida noturna e casual<br>Faixa de preço: R$ 40<br>Endereço: rua Carlos Tomaz, 33<br>Funcionamento: a qui., das 18h às 1h; sex. e sáb., das 18h às 2h; dom., das 18h às 23h";
+		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Tenente Pimenta Rock Bar</p></strong>Esse pub em estilo irlandês com referências militares é bom para quem gosta de curtir até tarde da noite. Assim, o cardápio inclui chopes e cervejas artesanais, bem como hambúrgueres de diversos tipos. Portanto, um dos diferenciais é a opção vegetariana.<br>Estilos: vida noturna e casual<br>Faixa de preço: R$ 40<br>Endereço: rua Carlos Tomaz, 33<br>Funcionamento: a qui., das 18h às 1h; sex. e sáb., das 18h às 2h; dom., das 18h às 23h";
 		  document.getElementById("texto").style.position = 'absolute';
 		  document.getElementById("texto").style.top = "30%";
 		  document.getElementById("texto").style.left = "1%";
@@ -217,7 +219,7 @@
 		}
 		function fasDeConta() {
 		  document.getElementById('imagem2').src = "restaurante6.jpg";
-		  document.getElementById("texto").innerHTML="Loja da Fábrica Ouropretana<br><br>O diferencial desse bar em Ouro Preto é que você degustará uma cerveja original, produzida localmente. Além disso, como um bom mineiro, provará uma série de tira-gostos para acompanhar a bebida – servida direto da torneira!<br>No entanto, atenção para o fato de haver 2 unidades da loja da fábrica em Ouro Preto. Uma delas só funciona durante o dia, sendo mais conveniente para comprar sua garrafa. Já a outra (Loja Pilar), indicada neste post, fecha só mais tarde.<br>Estilo: casual e vida noturna<br>Faixa de preço: R$ 30<br>Endereço: rua Benedito Valadares, 250<br>Funcionamento: ter. a sex., das 16h às 23h; sáb., das 11h às 22h (serve almoço das 12h às 15h)";
+		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Loja da Fábrica Ouropretana</p></strong>O diferencial desse bar em Ouro Preto é que você degustará uma cerveja original, produzida localmente. Além disso, como um bom mineiro, provará uma série de tira-gostos para acompanhar a bebida – servida direto da torneira!<br>No entanto, atenção para o fato de haver 2 unidades da loja da fábrica em Ouro Preto. Uma delas só funciona durante o dia, sendo mais conveniente para comprar sua garrafa. Já a outra (Loja Pilar), indicada neste post, fecha só mais tarde.<br>Estilo: casual e vida noturna<br>Faixa de preço: R$ 30<br>Endereço: rua Benedito Valadares, 250<br>Funcionamento: ter. a sex., das 16h às 23h; sáb., das 11h às 22h (serve almoço das 12h às 15h)";
 		  document.getElementById("texto").style.position = 'absolute';
 		  document.getElementById("texto").style.top = "30%";
 		  document.getElementById("texto").style.left = "1%";
@@ -231,7 +233,7 @@
 		}
 		function carregar() {
 			document.getElementById('imagem2').src = "bares1.jpg";
-			document.getElementById("texto").innerHTML="Comida Mineira<br>Toninho Geraes<br><br> Quero vaca atolada com aquela pimenta Mandioca, polenta, angu, carne seca, ioiô com iaiá Faz uma galinhada, leitoa assada, rabada e agrião Quem faz carinho no meu paladar manda no meu coração<br>Ai aquela costelinha que cê faz de vem em quando Com tempero e ora-pro-nóbis é de se comer rezando Feijãozinho tropeiro, toucinho de fumeiro, torresmo e jiló Melhor que tudo isso, meu bem, só mesmo o nosso xodó";
+			document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Comida Mineira<br>Toninho Geraes</p></strong> Quero vaca atolada com aquela pimenta Mandioca, polenta, angu, carne seca, ioiô com iaiá Faz uma galinhada, leitoa assada, rabada e agrião Quem faz carinho no meu paladar manda no meu coração<br>Ai aquela costelinha que cê faz de vem em quando Com tempero e ora-pro-nóbis é de se comer rezando Feijãozinho tropeiro, toucinho de fumeiro, torresmo e jiló Melhor que tudo isso, meu bem, só mesmo o nosso xodó";
 			document.getElementById("texto").style.position = 'absolute';
 			document.getElementById("texto").style.top = "30%";
 			document.getElementById("texto").style.left = "1%";

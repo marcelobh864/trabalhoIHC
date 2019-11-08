@@ -18,6 +18,9 @@
 			height: 19%;
   			width: 20%;
 		}
+		.espacamendo{
+			letter-spacing: 0.2em;
+		}
 		.imagem{
 			height: 80%;
 			width: 80%;
@@ -57,13 +60,12 @@
   			width: 80%;
 		}
 		#texto{
-			text-align: center;
+			text-align: justify;
 			text-decoration-style; 
 			font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
 			font-style: italic;
-			font-weight: bold;
 			margin-left: 72%;
-			margin-top: -9%;
+			margin-top: -10%;
 		}
 		ul{
 			margin: 0; padding: 0;
@@ -90,7 +92,7 @@
 			text-align: center;
 			padding:0px;
 			margin:0px;
-			margin-top: -23px;
+			margin-top: -21px;
 			float: left;
 			width: 100%;
 			list-style:none;
@@ -123,7 +125,7 @@
 					<li><a href="pontosturisticos.html"> Pontos Turisticos</a></li>
 					<li><a href="gastronomia.html">Gastronomia</a></li>
 					<li><a href="feirasAstesanatos.html">Feiras e Mercados</a></li>
-					<li><a href="">Restaurantes e Bares</a></li>
+					<li><a href="restauranteMineiro.html">Restaurantes e Bares</a></li>
 				</ul>
 			</div>
 		</div>
@@ -149,7 +151,7 @@
 			document.getElementById("imagem2").style.height = "76%";
 			document.getElementById("imagem2").style.width = "54";
 		  document.getElementById('imagem2').src = "historiaOuroPreto.png";
-		  document.getElementById("texto").innerHTML="História<br><br>A origem de Ouro Preto está no arraial do Padre Faria, fundado pelo bandeirante Antônio Dias de Oliveira, pelo Padre João de Faria Fialho e pelo Coronel Tomás Lopes de Camargo e um irmão deste, por volta de 1698.<br>Pela junção desses vários arraiais, tornando-se sede de conselho, foi elevada à categoria de vila em 1711 com o nome de Vila Rica. Em 1720 foi escolhida para capital da nova capitania de Minas Gerais. Em 1823, após a Independência do Brasil, Vila Rica recebeu o título de Imperial Cidade, conferido por D. Pedro I do Brasil, tornando-se oficialmente capital da então província das Minas Gerais e passando a ser designada como Imperial Cidade de Ouro Preto.";
+		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>História</p></strong>A origem de Ouro Preto está no arraial do Padre Faria, fundado pelo bandeirante Antônio Dias de Oliveira, pelo Padre João de Faria Fialho e pelo Coronel Tomás Lopes de Camargo e um irmão deste, por volta de 1698.<br>Pela junção desses vários arraiais, tornando-se sede de conselho, foi elevada à categoria de vila em 1711 com o nome de Vila Rica. Em 1720 foi escolhida para capital da nova capitania de Minas Gerais. Em 1823, após a Independência do Brasil, Vila Rica recebeu o título de Imperial Cidade, conferido por D. Pedro I do Brasil, tornando-se oficialmente capital da então província das Minas Gerais e passando a ser designada como Imperial Cidade de Ouro Preto.";
 		  document.getElementById("texto").style.position = 'absolute';
 		  document.getElementById("texto").style.top = "30%";
 		  document.getElementById("texto").style.left = "1%";
@@ -158,7 +160,7 @@
 		}
 		function donaLucinha() {
 		  document.getElementById('imagem2').src = "dadosGerais.jpg";
-		  document.getElementById("texto").innerHTML="Dados Gerais<br><br>Área da unidade territorial: 1.245,865 km²<br>Localização<br>A cidade está na Serra do Espinhaço, na Zona Metalúrgica de Minas Gerais (Quadrilátero Ferrífero). Está na Região Central da Macroregião Metalúrgica e Campo das Vertentes de Minas Gerais.<br>Limites do município<br>Sul: Catas Altas da Noruega, Itaverava, Ouro Branco e Congonhas<br>Oeste: Belo Vale e Moeda<br>Leste: Mariana<br>Norte: Itabirito e Santa Bárbara<br>População (Dados do Censo 2000 - IBGE)<br>Pessoas residentes: 70.281<br>Homens residentes: 34.277<br>Mulheres residentes: 36.004<br>Pessoas residentes área urbana: 56.292<br>Pessoas residentes areal rural: 9.985";
+		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Dados Gerais</p></strong>Área da unidade territorial: 1.245,865 km²<br>Localização<br>A cidade está na Serra do Espinhaço, na Zona Metalúrgica de Minas Gerais (Quadrilátero Ferrífero). Está na Região Central da Macroregião Metalúrgica e Campo das Vertentes de Minas Gerais.<br>Limites do município<br>Sul: Catas Altas da Noruega, Itaverava, Ouro Branco e Congonhas<br>Oeste: Belo Vale e Moeda<br>Leste: Mariana<br>Norte: Itabirito e Santa Bárbara<br>População (Dados do Censo 2000 - IBGE)<br>Pessoas residentes: 70.281<br>Homens residentes: 34.277<br>Mulheres residentes: 36.004<br>Pessoas residentes área urbana: 56.292<br>Pessoas residentes areal rural: 9.985";
 		  document.getElementById("texto").style.position = 'absolute';
 		  document.getElementById("texto").style.top = "30%";
 		  document.getElementById("texto").style.left = "1%";
@@ -172,7 +174,7 @@
 		}
 		function mariaDasTrancas() {
 		  document.getElementById('imagem2').src = "comoChegar.jpg";
-		  document.getElementById("texto").innerHTML="Como Chegar<br><br>Ouro Preto está situada na Serra do Espinhaço, na Zona Metalúrgica de Minas Gerais (Quadrilátero Ferrífero), na Região Central da Macroregião Metalúrgica e Campo das Vertentes de Minas Gerais.<br>Distâncias<br>Distância de Belo Horizonte – 95 km<br>Aeroporto da Pampulha – 110 km<br>Aeroporto de Confins – 150 km<br>Distância de outras capitais brasileiras:<br>Rio de Janeiro – 467 km ou 417 km (Estrada Real)<br>São Paulo – 745 km<br>Vitória – 624 km";
+		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Como Chegar</p></strong>Ouro Preto está situada na Serra do Espinhaço, na Zona Metalúrgica de Minas Gerais (Quadrilátero Ferrífero), na Região Central da Macroregião Metalúrgica e Campo das Vertentes de Minas Gerais.<br>Distâncias<br>Distância de Belo Horizonte – 95 km<br>Aeroporto da Pampulha – 110 km<br>Aeroporto de Confins – 150 km<br>Distância de outras capitais brasileiras:<br>Rio de Janeiro – 467 km ou 417 km (Estrada Real)<br>São Paulo – 745 km<br>Vitória – 624 km";
 		  document.getElementById("texto").style.position = 'absolute';
 		  document.getElementById("texto").style.top = "30%";
 		  document.getElementById("texto").style.left = "1%";
@@ -186,7 +188,7 @@
 		}
 		function xicoDaKafua() {
 		  document.getElementById('imagem2').src = "distritosOuroPreto.jpg";
-		  document.getElementById("texto").innerHTML="Distritos de Ouro Preto<br><br>A cidade possui 12 distritos:<br> Amarantina<br> Antonio Pereira<br> Cachoeira do Campo<br> Engenheiro Correia<br> Glaura<br> Lavras Novas<br> Miguel Burnier<br> Rodrigo Silva<br> Santa Rita de Ouro Preto<br> Santo Antonio do Leite<br> São Bartolomeu<br> Santo Antônio do Salto";
+		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Distritos de Ouro Preto</p></strong>A cidade possui 12 distritos:<br> Amarantina<br> Antonio Pereira<br> Cachoeira do Campo<br> Engenheiro Correia<br> Glaura<br> Lavras Novas<br> Miguel Burnier<br> Rodrigo Silva<br> Santa Rita de Ouro Preto<br> Santo Antonio do Leite<br> São Bartolomeu<br> Santo Antônio do Salto";
 		  document.getElementById("texto").style.position = 'absolute';
 		  document.getElementById("texto").style.top = "30%";
 		  document.getElementById("texto").style.left = "1%";
@@ -200,7 +202,7 @@
 		}
 		function carregar() {
 			document.getElementById('imagem2').src = "ouroPretoIndex1.png";
-			document.getElementById("texto").innerHTML="Ouro Preto<br><br>Tombada como Patrimônio Cultural da Humanidade pela Unesco, Ouro Preto guarda um conjunto arquitetônico inigualável entre as cidades históricas brasileiras. Os viajantes ficam fascinados ao caminhar pelas inúmeras ladeiras de pedra do Centro, para conhecer o expressivo casario colonial e construções como a Casa dos Contos, o Museu da Inconfidência, a Matriz de Nossa Senhora do Pilar e a Igreja de São Francisco de Assis.";
+			document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Ouro Preto</p></strong>Tombada como Patrimônio Cultural da Humanidade pela Unesco, Ouro Preto guarda um conjunto arquitetônico inigualável entre as cidades históricas brasileiras. Os viajantes ficam fascinados ao caminhar pelas inúmeras ladeiras de pedra do Centro, para conhecer o expressivo casario colonial e construções como a Casa dos Contos, o Museu da Inconfidência, a Matriz de Nossa Senhora do Pilar e a Igreja de São Francisco de Assis.";
 			document.getElementById("texto").style.position = 'absolute';
 			document.getElementById("texto").style.top = "30%";
 			document.getElementById("texto").style.left = "1%";
