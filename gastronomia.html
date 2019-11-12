@@ -40,7 +40,7 @@
 		}
 		#topo h1{
 			color: #daa520;
-			font-size: 43px;
+			font-size: 42px;
 			font-style:none;
 			text-align: center;
 			margin-top: 1%;
@@ -71,7 +71,7 @@
 			font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
 			font-style: italic;
 			margin-left: 69%;
-			margin-top: -10%;
+			margin-top: -12%;
 		}
 		ul{
 			margin: 0; padding: 0;
@@ -84,8 +84,8 @@
 			text-align: center;
 			display: block;
 			text-decoration: none;
-			margin-bottom: 10%;
-			padding: 5px 3px;
+			margin-bottom: 16%;
+			padding-bottom: 1%;
 			color:  #daa520;
 			font-size: 17px;
 			font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
@@ -98,7 +98,7 @@
 			text-align: center;
 			padding:0px;
 			margin:0px;
-			margin-top: -23px;
+			margin-top: -17px;
 			float: left;
 			width: 100%;
 			list-style:none;
@@ -108,10 +108,9 @@
  
 		#menu ul li a {
 			color:  #daa520;
-			font-size: 21px;
+			font-size: 20px;
 			text-decoration: none;
-			padding-left: 7%;
-			padding-right: 2%;
+			padding-left: 6%;
 			float:left;
 		}
  
@@ -121,23 +120,23 @@
 		}
 	</style>
 </head>
-<body onload="carregar()">
+<body onload="carregar()" onKeyDown="Teclas()">
 	<div id="corpo">
 		<div id="logo"><center><a href="index.html"><img class="imagem" src="brasao1.jpg"/></a></center></div>
 		<div id="topo">
 			<h1>Ouro Preto</h1>
 			<div id="menu">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="pontosturisticos.html">Pontos Turisticos</a></li>
-					<li><a href="feirasAstesanatos.html">Feiras e Mercados</a></li>
-					<li><a href="restauranteMineiro.html">Restaurantes e Bares  </a></li>
-				</ul>
-			</div>
+					<ul>
+						<li><a href="index.html"> Home</a></li>
+						<li><a href="pontosturisticos.html"> Pontos Turisticos</a></li>
+						<li><a href="gastronomia.html">Gastronomia</a></li>
+						<li><a href="feirasAstesanatos.html">Feiras e Mercados</a></li>
+						<li><a href="restauranteMineiro.html">Restaurantes e Bares</a></li>
+					</ul>
+				</div>
 		</div>
 		<div id="lateral">
 			<ul>
-				<li><a href="#"onclick="carregar();"> Gastronomia Home</a></li>
 				<li><a href="#"onclick="paoQueijo();">Tutu à Mineira</a></li>
 				<li><a href="#"onclick="frangoQuiabo();">Feijão Tropeiro</a></li>
 				<li><a href="#"onclick="feijaoTropeiro();">Frango ao Molho Pardo</a></li>
@@ -250,6 +249,25 @@
 			document.getElementById("imagem2").style.height = "76%";
 			document.getElementById("imagem2").style.width = "54";
 			document.getElementById("texto").style.fontSize="14px";
+		}
+		function Teclas(){
+			var ctrl=window.event.ctrlKey;
+			var tecla=window.event.keyCode;
+			if (ctrl && tecla==73) {
+				alert("Ctrl + I"); 
+				document.getElementById('txtName').focus();
+				event.keyCode=0; event.returnValue=false;
+			}
+			if (ctrl && tecla==78) {
+				alert("Ctrl + N");
+				event.keyCode=0; 
+				event.returnValue=false;
+			}
+			if (ctrl && tecla==68) {
+				alert("Ctrl + D");
+				event.keyCode=0; 
+				event.returnValue=false;
+			}
 		}
 	</script>
 </body>

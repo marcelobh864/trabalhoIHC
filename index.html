@@ -71,7 +71,7 @@
 			font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
 			font-style: italic;
 			margin-left: 69%;
-			margin-top: -10%;
+			margin-top: -12%;
 		}
 		ul{
 			margin: 0; padding: 0;
@@ -84,7 +84,7 @@
 			text-align: center;
 			display: block;
 			text-decoration: none;
-			margin-bottom: 19%;
+			margin-bottom: 25%;
 			padding-bottom: 6%;
 			color:  #daa520;
 			font-size: 17px;
@@ -98,7 +98,7 @@
 			text-align: center;
 			padding:0px;
 			margin:0px;
-			margin-top: -21px;
+			margin-top: -17px;
 			float: left;
 			width: 100%;
 			list-style:none;
@@ -108,10 +108,9 @@
  
 		#menu ul li a {
 			color:  #daa520;
-			font-size: 21px;
+			font-size: 20px;
 			text-decoration: none;
 			padding-left: 6%;
-			padding-right: 1%;
 			float:left;
 		}
  
@@ -119,29 +118,35 @@
 			font-weight: bold;
 		 text-decoration: underline;
 		}
+		u{ 
+			text-decoration: none; 
+			border-bottom-width: 1px; 
+			border-bottom-style: solid; 
+			border-bottom-color: #DAA520; 
+		}
 	</style>
 </head>
-<body onload="carregar()">
+<body onload="carregar()" onKeyDown="Teclas()">
 	<div id="corpo">
 		<div id="logo"><center><a href="index.html"><img class="imagem" src="brasao1.jpg"/></a></center></div>
 		<div id="topo">
 			<h1> OURO PRETO</h1>
 			<div id="menu">
 				<ul>
-					<li><a href="pontosturisticos.html"> Pontos Turisticos</a></li>
-					<li><a href="gastronomia.html">Gastronomia</a></li>
-					<li><a href="feirasAstesanatos.html">Feiras e Mercados</a></li>
-					<li><a href="restauranteMineiro.html">Restaurantes e Bares</a></li>
+						<li><a href="index.html"> <u>H</u>ome</a></li>
+					<li><a href="pontosturisticos.html"> <u>P</u>ontos Turisticos</a></li>
+					<li><a href="gastronomia.html"><u>G</u>astronomia</a></li>
+					<li><a href="feirasAstesanatos.html"><u>F</u>eiras e Mercados</a></li>
+					<li><a href="restauranteMineiro.html"><u>R</u>estaurantes e Bares</a></li>
 				</ul>
 			</div>
 		</div>
 		<div id="lateral">
 			<ul>
-				<li><a href="index.html">Pagina Inicial Home</a></li>
-				<li><a href="#"onclick="xapuri();">A História</a></li>
-				<li><a href="#"onclick="donaLucinha();">Dados Gerais</a></li>
-				<li><a href="#"onclick="mariaDasTrancas();">Como Chegar</a></li>
-				<li><a href="#"onclick="xicoDaKafua();">Distritos de Ouro Preto</a></li>
+				<li><a href="#"onclick="xapuri();"><u>A</u> História</a></li>
+				<li><a href="#"onclick="donaLucinha();"><u>D</u>ados Gerais</a></li>
+				<li><a href="#"onclick="mariaDasTrancas();"><u>C</u>omo Chegar</a></li>
+				<li><a href="#"onclick="xicoDaKafua();">Dis<u>t</u>ritos de Ouro Preto</a></li>
 			</ul>
 		</div>
 		<div id="centro">
@@ -221,6 +226,25 @@
 			document.getElementById("imagem2").style.height = "76%";
 			document.getElementById("imagem2").style.width = "54";
 			 document.getElementById("texto").style.fontSize="14px";
+		}
+		function Teclas(){
+			var ctrl=window.event.ctrlKey;
+			var tecla=window.event.keyCode;
+			if (ctrl && tecla==73) {
+				alert("Ctrl + I"); 
+				document.getElementById('txtName').focus();
+				event.keyCode=0; event.returnValue=false;
+			}
+			if (ctrl && tecla==78) {
+				alert("Ctrl + N");
+				event.keyCode=0; 
+				event.returnValue=false;
+			}
+			if (ctrl && tecla==68) {
+				alert("Ctrl + D");
+				event.keyCode=0; 
+				event.returnValue=false;
+			}
 		}
 	</script>
 </body>
