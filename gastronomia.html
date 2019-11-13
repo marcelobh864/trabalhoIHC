@@ -1,274 +1,309 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<style type="text/css">
-		body{
-			margin: 0;
-   			padding: 0;
-		}
-		#corpo{
-			position: absolute;
-			height: 100%;
-  			width: 100%;
-		}
-		#logo{
-			position: relative;
-			float: left;
-			height: 19%;
-  			width: 20%;
-		}
-		.espacamendo{
-			letter-spacing: 0.2em;
-		}
-		.imagem{
-			height: 80%;
-			width: 80%;
-		}
-		#imagem2{
-			padding-top: 4%;
-			margin-left: -3%;
-			height: 38%;
-			width: 61%;
-		}
-		#topo{
-			float: left;
-			position: relative;
-			height: 19%;
-  			width: 80%;
-  			background-color:#000000;
-		}
-		#topo h1{
-			color: #daa520;
-			font-size: 42px;
-			font-style:none;
-			text-align: center;
-			margin-top: 1%;
-			font-family: "Century", Helvetica, sans-serif;
-			letter-spacing: 0.2em;
-		}
-		#titulo{
-			text-align: center;
-			letter-spacing: 0.2em;
-			font-weight: bold;
-		}
-		#lateral{
-			float: left;
-			position: relative;
-			height: 81%;
-  			width: 20%;
-  			background-color:#000000;
-		}
-		#centro{
-			float: left;
-			position: relative;
-			height: 80%;
-  			width: 80%;
-		}
-		#texto{
-			text-align: justify;
-			text-decoration-style; 
-			font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-			font-style: italic;
-			margin-left: 69%;
-			margin-top: -12%;
-		}
-		ul{
-			margin: 0; padding: 0;
-			padding-top: 20%;
-		}
-		li{
-			list-style: none;
-		}
-		li a{
-			text-align: center;
-			display: block;
-			text-decoration: none;
-			margin-bottom: 16%;
-			padding-bottom: 1%;
-			color:  #daa520;
-			font-size: 17px;
-			font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-		}
-		li a:hover{
-		 font-weight: bold;
-		 text-decoration: underline;
-		}
-		#menu ul {
-			text-align: center;
-			padding:0px;
-			margin:0px;
-			margin-top: -17px;
-			float: left;
-			width: 100%;
-			list-style:none;
-		}
- 
-		#menu ul li { display: inline; }
- 
-		#menu ul li a {
-			color:  #daa520;
-			font-size: 20px;
-			text-decoration: none;
-			padding-left: 6%;
-			float:left;
-		}
- 
-		#menu ul li a:hover {
-			font-weight: bold;
-		 text-decoration: underline;
-		}
-	</style>
-</head>
-<body onload="carregar()" onKeyDown="Teclas()">
-	<div id="corpo">
-		<div id="logo"><center><a href="index.html"><img class="imagem" src="brasao1.jpg"/></a></center></div>
-		<div id="topo">
-			<h1>Ouro Preto</h1>
-			<div id="menu">
+	<head>
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+	   			padding: 0;
+			}
+			#corpo{
+				position: absolute;
+				height: 100%;
+	  			width: 100%;
+			}
+			#logo{
+				position: relative;
+				float: left;
+				height: 19%;
+	  			width: 20%;
+			}
+			.espacamendo{
+				letter-spacing: 0.2em;
+			}
+			.imagem{
+				height: 80%;
+				width: 80%;
+			}
+			#imagem2{
+				padding-top: 4%;
+				margin-left: -3%;
+				height: 38%;
+				width: 61%;
+			}
+			#topo{
+				float: left;
+				position: relative;
+				height: 19%;
+	  			width: 80%;
+	  			background-color:#000000;
+			}
+			#topo h1{
+				color: #daa520;
+				font-size: 42px;
+				font-style:none;
+				text-align: center;
+				margin-top: 1%;
+				font-family: "Century", Helvetica, sans-serif;
+				letter-spacing: 0.2em;
+			}
+			#titulo{
+				text-align: center;
+				letter-spacing: 0.2em;
+				font-weight: bold;
+			}
+			#lateral{
+				float: left;
+				position: relative;
+				height: 81%;
+	  			width: 20%;
+	  			background-color:#000000;
+			}
+			#centro{
+				float: left;
+				position: relative;
+				height: 80%;
+	  			width: 80%;
+			}
+			#texto{
+				text-align: justify;
+				text-decoration-style; 
+				font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+				font-style: italic;
+				margin-left: 69%;
+				margin-top: -11%;
+			}
+			ul{
+				margin: 0; padding: 0;
+				padding-top: 20%;
+			}
+			li{
+				list-style: none;
+			}
+			li a{
+				text-align: center;
+				display: block;
+				text-decoration: none;
+				margin-bottom: 16%;
+				padding-bottom: 1%;
+				color:  #daa520;
+				font-size: 17px;
+				font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+			}
+			li a:hover{
+			 font-weight: bold;
+			 text-decoration: underline;
+			}
+			#menu ul {
+				text-align: center;
+				padding:0px;
+				margin:0px;
+				margin-top: -17px;
+				float: left;
+				width: 100%;
+				list-style:none;
+			}
+	 
+			#menu ul li { display: inline; }
+	 
+			#menu ul li a {
+				color:  #daa520;
+				font-size: 20px;
+				text-decoration: none;
+				padding-left: 6%;
+				float:left;
+			}
+	 
+			#menu ul li a:hover {
+				font-weight: bold;
+			 text-decoration: underline;
+			}
+			u{ 
+				text-decoration: none; 
+				border-bottom-width: 1px; 
+				border-bottom-style: solid; 
+				border-bottom-color: #DAA520; 
+			}
+		</style>
+	</head>
+	<body onload="carregar()" onKeyDown="Teclas()">
+		<div id="corpo">
+			<div id="logo"><center><a href="index.html"><img class="imagem" src="brasao1.jpg"/></a></center></div>
+			<div id="topo">
+				<h1>Ouro Preto</h1>
+				<div id="menu">
 					<ul>
-						<li><a href="index.html"> Home</a></li>
-						<li><a href="pontosturisticos.html"> Pontos Turisticos</a></li>
-						<li><a href="gastronomia.html">Gastronomia</a></li>
-						<li><a href="feirasAstesanatos.html">Feiras e Mercados</a></li>
-						<li><a href="restauranteMineiro.html">Restaurantes e Bares</a></li>
+						<li><a href="index.html" id="indexAjuda"> <u>H</u>ome</a></li>
+						<li><a href="pontosturisticos.html" id="turismoAjuda"> <u>P</u>ontos Turisticos</a></li>
+						<li><a href="gastronomia.html" id="gastronomiaAjuda"><u>G</u>astronomia</a></li>
+						<li><a href="feirasAstesanatos.html" id="feiraAjuda"><u>F</u>eiras e Mercados</a></li>
+						<li><a href="restauranteMineiro.html"  id="restauranteAjuda"><u>R</u>estaurantes e Bares</a></li>
 					</ul>
-				</div>
+					</div>
+			</div>
+			<div id="lateral">
+				<ul>
+					<li><a href="#"onclick="paoQueijo();" id="tutuAjuda">Tutu à <u>M</u>ineira</a></li>
+					<li><a href="#"onclick="frangoQuiabo();" id="feijaoAjuda">F<u>e</u>ijão Tropeiro</a></li>
+					<li><a href="#"onclick="feijaoTropeiro();" id="frangoAjuda">Fr<u>a</u>ngo ao Molho Pardo</a></li>
+					<li><a href="#"onclick="oraProNobis();" id="quiaboAjuda">Frango com <u>Q</u>uiabo</a></li>
+					<li><a href="#"onclick="vacaAtolada();" id="docesAjuda"><u>D</u>oces</a></li>
+					<li><a href="#"onclick="leitaoPururuca();" id="nobisAjuda"><u>O</u>ra Pro Nóbis</a></li>
+				</ul>
+			</div>
+			<div id="centro">
+				<p id="titulo">Gastronomia</p>
+				<center><img id="imagem2" src="Comida-Mineira.jpg"/></center>
+				<p id="texto">Comida Mineira<br>Toninho Geraes<br> Me dá de comer mineira Tempera o tutu, paixão Já mandei fazer a feira Já botei lenha no fogão Carrega no cheiro, mineira Faz como só você faz Mata essa minha vontade Que eu tô com saudade De Minas Gerais Quero vaca atolada com aquela pimenta Mandioca, polenta, angu, carne seca, ioiô com iaiá Faz uma galinhada, leitoa assada, rabada e agrião Quem faz carinho no meu paladar manda no meu coração Ai aquela costelinha que cê faz de vem em quando Com tempero e ora-pro-nóbis é de se comer rezando Feijãozinho tropeiro, toucinho de fumeiro, torresmo e jiló Melhor que tudo isso, meu bem, só mesmo o nosso xodó</p>
+			</div>
 		</div>
-		<div id="lateral">
-			<ul>
-				<li><a href="#"onclick="paoQueijo();">Tutu à Mineira</a></li>
-				<li><a href="#"onclick="frangoQuiabo();">Feijão Tropeiro</a></li>
-				<li><a href="#"onclick="feijaoTropeiro();">Frango ao Molho Pardo</a></li>
-				<li><a href="#"onclick="oraProNobis();">Frango com Quiabo</a></li>
-				<li><a href="#"onclick="vacaAtolada();">Doces</a></li>
-				<li><a href="#"onclick="leitaoPururuca();">Ora Pro Nóbis</a></li>
-			</ul>
-		</div>
-		<div id="centro">
-			<p id="titulo">Gastronomia</p>
-			<center><img id="imagem2" src="Comida-Mineira.jpg"/></center>
-			<p id="texto">Comida Mineira<br>Toninho Geraes<br> Me dá de comer mineira Tempera o tutu, paixão Já mandei fazer a feira Já botei lenha no fogão Carrega no cheiro, mineira Faz como só você faz Mata essa minha vontade Que eu tô com saudade De Minas Gerais Quero vaca atolada com aquela pimenta Mandioca, polenta, angu, carne seca, ioiô com iaiá Faz uma galinhada, leitoa assada, rabada e agrião Quem faz carinho no meu paladar manda no meu coração Ai aquela costelinha que cê faz de vem em quando Com tempero e ora-pro-nóbis é de se comer rezando Feijãozinho tropeiro, toucinho de fumeiro, torresmo e jiló Melhor que tudo isso, meu bem, só mesmo o nosso xodó</p>
-		</div>
-	</div>
-	<script type="text/javascript">
-		function paoQueijo() {
-			document.getElementById("imagem2").style.position = 'absolute';
-			document.getElementById("imagem2").style.top = "1%";
-			document.getElementById("imagem2").style.left = "8%";
-			document.getElementById("imagem2").style.height = "76%";
-			document.getElementById("imagem2").style.width = "54";
-		  document.getElementById('imagem2').src = "receita2.jpg";
-		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Tutu à Mineira</p></strong> Trata-se de feijão cozido engrossado com farinha de mandioca enriquecido com calabresa e bacon. Iguaria simples, mas muito saborosa, o tutu de feijão é de origem africana e, além de Minas, é famosa em algumas cidades brasileiras.";
-		  document.getElementById("texto").style.position = 'absolute';
-		  document.getElementById("texto").style.top = "30%";
-		  document.getElementById("texto").style.left = "1%";
-		  document.getElementById("texto").style.right = "4%";
-		  document.getElementById("texto").style.fontSize="14px";
-		}
-		function frangoQuiabo() {
-		  document.getElementById('imagem2').src = "receita4.jpg";
-		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Feijão Tropeiro</p></strong>O feijão tropeiro surge na época do ciclo do ouro no período colonial quando as mercadorias eram levadas por tropas de cavalos pelos comerciantes, chamados de tropeiros. Esses homens se alimentavam de feijão misturado com farinha de mandioca, torresmo e ovos refogados na cebola, alho e outros tempero. Daí surge o nome feijão tropeiro, uma referência aos membros das tropas.";
-		  document.getElementById("texto").style.position = 'absolute';
-		  document.getElementById("texto").style.top = "30%";
-		  document.getElementById("texto").style.left = "1%";
-		  document.getElementById("texto").style.right = "4%";
-		  document.getElementById("imagem2").style.position = 'absolute';
-			document.getElementById("imagem2").style.top = "1%";
-			document.getElementById("imagem2").style.left = "8%";
-			document.getElementById("imagem2").style.height = "76%";
-			document.getElementById("imagem2").style.width = "54";
-			document.getElementById("texto").style.fontSize="14px";
-		}
-		function feijaoTropeiro() {
-		  document.getElementById('imagem2').src = "receita3.jpg";
-		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Frango ao Molho Pardo</p></strong>Muita gente torce o nariz para esse prato, pois ele é feito com sangue. Sim, trata-se de galinha em pedaços cozida no próprio sangue da ave. No prato tradicional, abate-se a galinha cortando seu pescoço e, então, deixa-se o sangue escorrer para uma vasilha. Acrescenta-se um pouco de vinagre para que não coagule e é com isso que se fará o caldo do frango, o molho pardo. ";
-		  document.getElementById("texto").style.position = 'absolute';
-		  document.getElementById("texto").style.top = "30%";
-		  document.getElementById("texto").style.left = "1%";
-		  document.getElementById("texto").style.right = "4%";
-		  document.getElementById("imagem2").style.position = 'absolute';
-			document.getElementById("imagem2").style.top = "1%";
-			document.getElementById("imagem2").style.left = "8%";
-			document.getElementById("imagem2").style.height = "76%";
-			document.getElementById("imagem2").style.width = "54";
-			document.getElementById("texto").style.fontSize="14px";
-		}
-		function oraProNobis() {
-		  document.getElementById('imagem2').src = "receita1.jpg";
-		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Frango com quiabo</p></strong>Um clássico mineiro! É um ensopado de frango caipira com o quiabo, tão rejeitado por tanta gente. Faz muito sucesso em restaurantes de todo o estado. Muita gente faz com frango industrializado, mas dizem que isso tira a essência e o sabor da receita original. Como o quiabo é de origem africana, acredita-se que tenha sido trazido ao Brasil pelos escravos e que a mistura com o frango se deu porque eram os ingredientes que se tinha à mão no século XIX.";
-		  document.getElementById("texto").style.position = 'absolute';
-		  document.getElementById("texto").style.top = "30%";
-		  document.getElementById("texto").style.left = "1%";
-		  document.getElementById("texto").style.right = "4%";
-		  document.getElementById("imagem2").style.position = 'absolute';
-			document.getElementById("imagem2").style.top = "1%";
-			document.getElementById("imagem2").style.left = "8%";
-			document.getElementById("imagem2").style.height = "76%";
-			document.getElementById("imagem2").style.width = "54";
-			document.getElementById("texto").style.fontSize="14px";
-		}
-		function vacaAtolada() {
-		  document.getElementById('imagem2').src = "receita6.jpg";
-		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Doces</p></strong>Assim como as refeições, as sobremesas de Ouro Preto são de salivar. O sabor artesanal é o principal ingrediente que atrai os consumidores. Isso porque os doces começaram a ser produzidos para incrementar a renda das famílias. Mas a qualidade e o primor dos produtos vendidos ganharam fama e até hoje sustentam os produtores. Confira alguns deles: Doce de Leite, Sericaia, Goiabada com queijo, Compotas, Doce de abóbora e Rocambole";
-		  document.getElementById("texto").style.position = 'absolute';
-		  document.getElementById("texto").style.top = "30%";
-		  document.getElementById("texto").style.left = "1%";
-		  document.getElementById("texto").style.right = "4%";
-		  document.getElementById("imagem2").style.position = 'absolute';
-			document.getElementById("imagem2").style.top = "1%";
-			document.getElementById("imagem2").style.left = "8%";
-			document.getElementById("imagem2").style.height = "76%";
-			document.getElementById("imagem2").style.width = "54";
-			document.getElementById("texto").style.fontSize="14px";
-		}
-		function leitaoPururuca() {
-		  document.getElementById('imagem2').src = "receita5.jpg";
-		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Ora Pro Nóbis</p></strong>É uma hortaliça muito utilizada na culinária mineira. Seu nome vem do latim e quer dizer “orai por nós”. Um dos pratos mais conhecidos é o frango com oro-pro-nobis, que é um cozido de frango caipira com a verdura. É tão comum aqui em Minas que em Sabará há, anualmente, o Festival de Oro-pro-nobis, onde pratos diversos com esse ingrediente são apresentados.";
-		  document.getElementById("texto").style.position = 'absolute';
-		  document.getElementById("texto").style.top = "30%";
-		  document.getElementById("texto").style.left = "1%";
-		  document.getElementById("texto").style.right = "4%";
-		  document.getElementById("imagem2").style.position = 'absolute';
-			document.getElementById("imagem2").style.top = "1%";
-			document.getElementById("imagem2").style.left = "8%";
-			document.getElementById("imagem2").style.height = "76%";
-			document.getElementById("imagem2").style.width = "54";
-			document.getElementById("texto").style.fontSize="14px";
-		}
-		function carregar() {
-		    document.getElementById('imagem2').src = "Comida-Mineira.jpg";
-		    document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Comida Mineira<br>Toninho Geraes</p></strong> Me dá de comer mineira Tempera o tutu, paixão Já mandei fazer a feira Já botei lenha no fogão Carrega no cheiro, mineira Faz como só você faz Mata essa minha vontade Que eu tô com saudade De Minas Gerais Quero vaca atolada com aquela pimenta Mandioca, polenta, angu, carne seca, ioiô com iaiá Faz uma galinhada, leitoa assada, rabada e agrião Quem faz carinho no meu paladar manda no meu coração Ai aquela costelinha que cê faz de vem em quando Com tempero e ora-pro-nóbis é de se comer rezando Feijãozinho tropeiro, toucinho de fumeiro, torresmo e jiló Melhor que tudo isso, meu bem, só mesmo o nosso xodó";
-		    document.getElementById("texto").style.position = 'absolute';
-		    document.getElementById("texto").style.top = "30%";
-		    document.getElementById("texto").style.left = "1%";
-		    document.getElementById("texto").style.right = "4%";
-		    document.getElementById("imagem2").style.position = 'absolute';
-			document.getElementById("imagem2").style.top = "1%";
-			document.getElementById("imagem2").style.left = "7%";
-			document.getElementById("imagem2").style.height = "76%";
-			document.getElementById("imagem2").style.width = "54";
-			document.getElementById("texto").style.fontSize="14px";
-		}
-		function Teclas(){
-			var ctrl=window.event.ctrlKey;
-			var tecla=window.event.keyCode;
-			if (ctrl && tecla==73) {
-				alert("Ctrl + I"); 
-				document.getElementById('txtName').focus();
-				event.keyCode=0; event.returnValue=false;
+		<script type="text/javascript">
+			function paoQueijo() {
+				document.getElementById("imagem2").style.position = 'absolute';
+				document.getElementById("imagem2").style.top = "1%";
+				document.getElementById("imagem2").style.left = "8%";
+				document.getElementById("imagem2").style.height = "76%";
+				document.getElementById("imagem2").style.width = "54";
+			  document.getElementById('imagem2').src = "receita2.jpg";
+			  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Tutu à Mineira</p></strong> Trata-se de feijão cozido engrossado com farinha de mandioca enriquecido com calabresa e bacon. Iguaria simples, mas muito saborosa, o tutu de feijão é de origem africana e, além de Minas, é famosa em algumas cidades brasileiras.";
+			  document.getElementById("texto").style.position = 'absolute';
+			  document.getElementById("texto").style.top = "30%";
+			  document.getElementById("texto").style.left = "1%";
+			  document.getElementById("texto").style.right = "4%";
+			  document.getElementById("texto").style.fontSize="14px";
 			}
-			if (ctrl && tecla==78) {
-				alert("Ctrl + N");
-				event.keyCode=0; 
-				event.returnValue=false;
+			function frangoQuiabo() {
+			  document.getElementById('imagem2').src = "receita4.jpg";
+			  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Feijão Tropeiro</p></strong>O feijão tropeiro surge na época do ciclo do ouro no período colonial quando as mercadorias eram levadas por tropas de cavalos pelos comerciantes, chamados de tropeiros. Esses homens se alimentavam de feijão misturado com farinha de mandioca, torresmo e ovos refogados na cebola, alho e outros tempero. Daí surge o nome feijão tropeiro, uma referência aos membros das tropas.";
+			  document.getElementById("texto").style.position = 'absolute';
+			  document.getElementById("texto").style.top = "30%";
+			  document.getElementById("texto").style.left = "1%";
+			  document.getElementById("texto").style.right = "4%";
+			  document.getElementById("imagem2").style.position = 'absolute';
+				document.getElementById("imagem2").style.top = "1%";
+				document.getElementById("imagem2").style.left = "8%";
+				document.getElementById("imagem2").style.height = "76%";
+				document.getElementById("imagem2").style.width = "54";
+				document.getElementById("texto").style.fontSize="14px";
 			}
-			if (ctrl && tecla==68) {
-				alert("Ctrl + D");
-				event.keyCode=0; 
-				event.returnValue=false;
+			function feijaoTropeiro() {
+			  document.getElementById('imagem2').src = "receita3.jpg";
+			  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Frango ao Molho Pardo</p></strong>Muita gente torce o nariz para esse prato, pois ele é feito com sangue. Sim, trata-se de galinha em pedaços cozida no próprio sangue da ave. No prato tradicional, abate-se a galinha cortando seu pescoço e, então, deixa-se o sangue escorrer para uma vasilha. Acrescenta-se um pouco de vinagre para que não coagule e é com isso que se fará o caldo do frango, o molho pardo. ";
+			  document.getElementById("texto").style.position = 'absolute';
+			  document.getElementById("texto").style.top = "30%";
+			  document.getElementById("texto").style.left = "1%";
+			  document.getElementById("texto").style.right = "4%";
+			  document.getElementById("imagem2").style.position = 'absolute';
+				document.getElementById("imagem2").style.top = "1%";
+				document.getElementById("imagem2").style.left = "8%";
+				document.getElementById("imagem2").style.height = "76%";
+				document.getElementById("imagem2").style.width = "54";
+				document.getElementById("texto").style.fontSize="14px";
 			}
-		}
-	</script>
-</body>
+			function oraProNobis() {
+			  document.getElementById('imagem2').src = "receita1.jpg";
+			  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Frango com quiabo</p></strong>Um clássico mineiro! É um ensopado de frango caipira com o quiabo, tão rejeitado por tanta gente. Faz muito sucesso em restaurantes de todo o estado. Muita gente faz com frango industrializado, mas dizem que isso tira a essência e o sabor da receita original. Como o quiabo é de origem africana, acredita-se que tenha sido trazido ao Brasil pelos escravos e que a mistura com o frango se deu porque eram os ingredientes que se tinha à mão no século XIX.";
+			  document.getElementById("texto").style.position = 'absolute';
+			  document.getElementById("texto").style.top = "30%";
+			  document.getElementById("texto").style.left = "1%";
+			  document.getElementById("texto").style.right = "4%";
+			  document.getElementById("imagem2").style.position = 'absolute';
+				document.getElementById("imagem2").style.top = "1%";
+				document.getElementById("imagem2").style.left = "8%";
+				document.getElementById("imagem2").style.height = "76%";
+				document.getElementById("imagem2").style.width = "54";
+				document.getElementById("texto").style.fontSize="14px";
+			}
+			function vacaAtolada() {
+			  document.getElementById('imagem2').src = "receita6.jpg";
+			  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Doces</p></strong>Assim como as refeições, as sobremesas de Ouro Preto são de salivar. O sabor artesanal é o principal ingrediente que atrai os consumidores. Isso porque os doces começaram a ser produzidos para incrementar a renda das famílias. Mas a qualidade e o primor dos produtos vendidos ganharam fama e até hoje sustentam os produtores. Confira alguns deles: Doce de Leite, Sericaia, Goiabada com queijo, Compotas, Doce de abóbora e Rocambole";
+			  document.getElementById("texto").style.position = 'absolute';
+			  document.getElementById("texto").style.top = "30%";
+			  document.getElementById("texto").style.left = "1%";
+			  document.getElementById("texto").style.right = "4%";
+			  document.getElementById("imagem2").style.position = 'absolute';
+				document.getElementById("imagem2").style.top = "1%";
+				document.getElementById("imagem2").style.left = "8%";
+				document.getElementById("imagem2").style.height = "76%";
+				document.getElementById("imagem2").style.width = "54";
+				document.getElementById("texto").style.fontSize="14px";
+			}
+			function leitaoPururuca() {
+			  document.getElementById('imagem2').src = "receita5.jpg";
+			  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Ora Pro Nóbis</p></strong>É uma hortaliça muito utilizada na culinária mineira. Seu nome vem do latim e quer dizer “orai por nós”. Um dos pratos mais conhecidos é o frango com oro-pro-nobis, que é um cozido de frango caipira com a verdura. É tão comum aqui em Minas que em Sabará há, anualmente, o Festival de Oro-pro-nobis, onde pratos diversos com esse ingrediente são apresentados.";
+			  document.getElementById("texto").style.position = 'absolute';
+			  document.getElementById("texto").style.top = "30%";
+			  document.getElementById("texto").style.left = "1%";
+			  document.getElementById("texto").style.right = "4%";
+			  document.getElementById("imagem2").style.position = 'absolute';
+				document.getElementById("imagem2").style.top = "1%";
+				document.getElementById("imagem2").style.left = "8%";
+				document.getElementById("imagem2").style.height = "76%";
+				document.getElementById("imagem2").style.width = "54";
+				document.getElementById("texto").style.fontSize="14px";
+			}
+			function carregar() {
+			    document.getElementById('imagem2').src = "Comida-Mineira.jpg";
+			    document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Comida Mineira<br>Toninho Geraes</p></strong> Me dá de comer mineira Tempera o tutu, paixão Já mandei fazer a feira Já botei lenha no fogão Carrega no cheiro, mineira Faz como só você faz Mata essa minha vontade Que eu tô com saudade De Minas Gerais Quero vaca atolada com aquela pimenta Mandioca, polenta, angu, carne seca, ioiô com iaiá Faz uma galinhada, leitoa assada, rabada e agrião Quem faz carinho no meu paladar manda no meu coração Ai aquela costelinha que cê faz de vem em quando Com tempero e ora-pro-nóbis é de se comer rezando Feijãozinho tropeiro, toucinho de fumeiro, torresmo e jiló Melhor que tudo isso, meu bem, só mesmo o nosso xodó";
+			    document.getElementById("texto").style.position = 'absolute';
+			    document.getElementById("texto").style.top = "30%";
+			    document.getElementById("texto").style.left = "1%";
+			    document.getElementById("texto").style.right = "4%";
+			    document.getElementById("imagem2").style.position = 'absolute';
+				document.getElementById("imagem2").style.top = "1%";
+				document.getElementById("imagem2").style.left = "7%";
+				document.getElementById("imagem2").style.height = "76%";
+				document.getElementById("imagem2").style.width = "54";
+				document.getElementById("texto").style.fontSize="14px";
+			}
+			function Teclas(){
+				var ctrl=window.event.ctrlKey;
+				var tecla=window.event.keyCode;
+				if (ctrl && tecla==72) {
+					document.getElementById('indexAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==80) {
+					document.getElementById('turismoAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==71) {
+					document.getElementById('gastronomiaAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==70) {
+					document.getElementById('feiraAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==82) {
+					document.getElementById('restauranteAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==77) {
+					document.getElementById('tutuAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==69) {
+					document.getElementById('feijaoAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==65) {
+					document.getElementById('frangoAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==81) {
+					document.getElementById('quiaboAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==68) {
+					document.getElementById('docesAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==79) {
+					document.getElementById('nobisAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+			}
+		</script>
+	</body>
 </html>

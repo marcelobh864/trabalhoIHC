@@ -1,251 +1,272 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<style type="text/css">
-		body{
-			margin: 0;
-   			padding: 0;
-		}
-		#corpo{
-			position: absolute;
-			height: 100%;
-  			width: 100%;
-		}
-		#logo{
-			position: relative;
-			float: left;
-			height: 19%;
-  			width: 20%;
-		}
-		.espacamendo{
-			letter-spacing: 0.2em;
-		}
-		.imagem{
-			height: 80%;
-			width: 80%;
-		}
-		#imagem2{
-			padding-top: 4%;
-			margin-left: -3%;
-			height: 38%;
-			width: 61%;
-		}
-		#topo{
-			float: left;
-			position: relative;
-			height: 19%;
-  			width: 80%;
-  			background-color:#000000;
-		}
-		#topo h1{
-			color: #daa520;
-			font-size: 42px;
-			font-style:none;
-			text-align: center;
-			margin-top: 1%;
-			font-family: "Century", Helvetica, sans-serif;
-			letter-spacing: 0.2em;
-		}
-		#titulo{
-			text-align: center;
-			letter-spacing: 0.2em;
-			font-weight: bold;
-		}
-		#lateral{
-			float: left;
-			position: relative;
-			height: 81%;
-  			width: 20%;
-  			background-color:#000000;
-		}
-		#centro{
-			float: left;
-			position: relative;
-			height: 80%;
-  			width: 80%;
-		}
-		#texto{
-			text-align: justify;
-			text-decoration-style; 
-			font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-			font-style: italic;
-			margin-left: 69%;
-			margin-top: -12%;
-		}
-		ul{
-			margin: 0; padding: 0;
-			padding-top: 20%;
-		}
-		li{
-			list-style: none;
-		}
-		li a{
-			text-align: center;
-			display: block;
-			text-decoration: none;
-			margin-bottom: 25%;
-			padding-bottom: 6%;
-			color:  #daa520;
-			font-size: 17px;
-			font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-		}
-		li a:hover{
-		 font-weight: bold;
-		 text-decoration: underline;
-		}
-		#menu ul {
-			text-align: center;
-			padding:0px;
-			margin:0px;
-			margin-top: -17px;
-			float: left;
-			width: 100%;
-			list-style:none;
-		}
- 
-		#menu ul li { display: inline; }
- 
-		#menu ul li a {
-			color:  #daa520;
-			font-size: 20px;
-			text-decoration: none;
-			padding-left: 6%;
-			float:left;
-		}
- 
-		#menu ul li a:hover {
-			font-weight: bold;
-		 text-decoration: underline;
-		}
-		u{ 
-			text-decoration: none; 
-			border-bottom-width: 1px; 
-			border-bottom-style: solid; 
-			border-bottom-color: #DAA520; 
-		}
-	</style>
-</head>
-<body onload="carregar()" onKeyDown="Teclas()">
-	<div id="corpo">
-		<div id="logo"><center><a href="index.html"><img class="imagem" src="brasao1.jpg"/></a></center></div>
-		<div id="topo">
-			<h1> OURO PRETO</h1>
-			<div id="menu">
+	<head>
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+	   			padding: 0;
+			}
+			#corpo{
+				position: absolute;
+				height: 100%;
+	  			width: 100%;
+			}
+			#logo{
+				position: relative;
+				float: left;
+				height: 19%;
+	  			width: 20%;
+			}
+			.espacamendo{
+				letter-spacing: 0.2em;
+			}
+			.imagem{
+				height: 80%;
+				width: 80%;
+			}
+			#imagem2{
+				padding-top: 4%;
+				margin-left: -3%;
+				height: 38%;
+				width: 61%;
+			}
+			#topo{
+				float: left;
+				position: relative;
+				height: 19%;
+	  			width: 80%;
+	  			background-color:#000000;
+			}
+			#topo h1{
+				color: #daa520;
+				font-size: 42px;
+				font-style:none;
+				text-align: center;
+				margin-top: 1%;
+				font-family: "Century", Helvetica, sans-serif;
+				letter-spacing: 0.2em;
+			}
+			#titulo{
+				text-align: center;
+				letter-spacing: 0.2em;
+				font-weight: bold;
+			}
+			#lateral{
+				float: left;
+				position: relative;
+				height: 81%;
+	  			width: 20%;
+	  			background-color:#000000;
+			}
+			#centro{
+				float: left;
+				position: relative;
+				height: 80%;
+	  			width: 80%;
+			}
+			#texto{
+				text-align: justify;
+				text-decoration-style; 
+				font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+				font-style: italic;
+				margin-left: 69%;
+				margin-top: -11%;
+			}
+			ul{
+				margin: 0; padding: 0;
+				padding-top: 20%;
+			}
+			li{
+				list-style: none;
+			}
+			li a{
+				text-align: center;
+				display: block;
+				text-decoration: none;
+				margin-bottom: 25%;
+				padding-bottom: 6%;
+				color:  #daa520;
+				font-size: 17px;
+				font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+			}
+			li a:hover{
+			 font-weight: bold;
+			 text-decoration: underline;
+			}
+			#menu ul {
+				text-align: center;
+				padding:0px;
+				margin:0px;
+				margin-top: -17px;
+				float: left;
+				width: 100%;
+				list-style:none;
+			}
+	 
+			#menu ul li { display: inline; }
+	 
+			#menu ul li a {
+				color:  #daa520;
+				font-size: 20px;
+				text-decoration: none;
+				padding-left: 6%;
+				float:left;
+			}
+	 
+			#menu ul li a:hover {
+				font-weight: bold;
+			 	text-decoration: underline;
+			}
+			u{ 
+				text-decoration: none; 
+				border-bottom-width: 1px; 
+				border-bottom-style: solid; 
+				border-bottom-color: #DAA520; 
+			}
+		</style>
+	</head>
+	<body onload="carregar()" onKeyDown="Teclas()">
+		<div id="corpo">
+			<div id="logo"><center><a href="index.html"><img class="imagem" src="brasao1.jpg"/></a></center></div>
+			<div id="topo">
+				<h1> OURO PRETO</h1>
+				<div id="menu">
+					<ul>
+						<li><a href="index.html" id="indexAjuda"> <u>H</u>ome</a></li>
+						<li><a href="pontosturisticos.html" id="turismoAjuda"> <u>P</u>ontos Turisticos</a></li>
+						<li><a href="gastronomia.html" id="gastronomiaAjuda"><u>G</u>astronomia</a></li>
+						<li><a href="feirasAstesanatos.html" id="feiraAjuda"><u>F</u>eiras e Mercados</a></li>
+						<li><a href="restauranteMineiro.html"  id="restauranteAjuda"><u>R</u>estaurantes e Bares</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="lateral">
 				<ul>
-						<li><a href="index.html"> <u>H</u>ome</a></li>
-					<li><a href="pontosturisticos.html"> <u>P</u>ontos Turisticos</a></li>
-					<li><a href="gastronomia.html"><u>G</u>astronomia</a></li>
-					<li><a href="feirasAstesanatos.html"><u>F</u>eiras e Mercados</a></li>
-					<li><a href="restauranteMineiro.html"><u>R</u>estaurantes e Bares</a></li>
+					<li><a href="#"onclick="xapuri();" id="historiaAjuda"><u>A</u> História</a></li>
+					<li><a href="#"onclick="donaLucinha();" id="geraisAjuda"><u>D</u>ados Gerais</a></li>
+					<li><a href="#"onclick="mariaDasTrancas();" id="chegarAjuda"><u>C</u>omo Chegar</a></li>
+					<li><a href="#"onclick="xicoDaKafua();" id="distritoAjuda">Distritos de <u>O</u>uro Preto</a></li>
 				</ul>
 			</div>
+			<div id="centro">
+				<p id="titulo">A Cidade</p>
+				<center><img id="imagem2" src="bares1.jpg"/></center>
+				<p id="texto">Ouro Preto<br>Tombada como Patrimônio Cultural da Humanidade pela Unesco, Ouro Preto guarda um conjunto arquitetônico inigualável entre as cidades históricas brasileiras. Os viajantes ficam fascinados ao caminhar pelas inúmeras ladeiras de pedra do Centro, para conhecer o expressivo casario colonial e construções como a Casa dos Contos, o Museu da Inconfidência, a Matriz de Nossa Senhora do Pilar e a Igreja de São Francisco de Assis.</p>
+				<p id="casoUso"></p>
+			</div>
 		</div>
-		<div id="lateral">
-			<ul>
-				<li><a href="#"onclick="xapuri();"><u>A</u> História</a></li>
-				<li><a href="#"onclick="donaLucinha();"><u>D</u>ados Gerais</a></li>
-				<li><a href="#"onclick="mariaDasTrancas();"><u>C</u>omo Chegar</a></li>
-				<li><a href="#"onclick="xicoDaKafua();">Dis<u>t</u>ritos de Ouro Preto</a></li>
-			</ul>
-		</div>
-		<div id="centro">
-			<p id="titulo">A Cidade</p>
-			<center><img id="imagem2" src="bares1.jpg"/></center>
-			<p id="texto">Ouro Preto<br>Tombada como Patrimônio Cultural da Humanidade pela Unesco, Ouro Preto guarda um conjunto arquitetônico inigualável entre as cidades históricas brasileiras. Os viajantes ficam fascinados ao caminhar pelas inúmeras ladeiras de pedra do Centro, para conhecer o expressivo casario colonial e construções como a Casa dos Contos, o Museu da Inconfidência, a Matriz de Nossa Senhora do Pilar e a Igreja de São Francisco de Assis.</p>
-			<p id="casoUso"></p>
-		</div>
-	</div>
-	<script type="text/javascript">
-		function xapuri() {
-			document.getElementById("imagem2").style.position = 'absolute';
-			document.getElementById("imagem2").style.top = "1%";
-			document.getElementById("imagem2").style.left = "8%";
-			document.getElementById("imagem2").style.height = "76%";
-			document.getElementById("imagem2").style.width = "54";
-		  document.getElementById('imagem2').src = "historiaOuroPreto.png";
-		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>História</p></strong>A origem de Ouro Preto está no arraial do Padre Faria, fundado pelo bandeirante Antônio Dias de Oliveira, pelo Padre João de Faria Fialho e pelo Coronel Tomás Lopes de Camargo e um irmão deste, por volta de 1698.<br>Pela junção desses vários arraiais, tornando-se sede de conselho, foi elevada à categoria de vila em 1711 com o nome de Vila Rica. Em 1720 foi escolhida para capital da nova capitania de Minas Gerais. Em 1823, após a Independência do Brasil, Vila Rica recebeu o título de Imperial Cidade, conferido por D. Pedro I do Brasil, tornando-se oficialmente capital da então província das Minas Gerais e passando a ser designada como Imperial Cidade de Ouro Preto.";
-		  document.getElementById("texto").style.position = 'absolute';
-		  document.getElementById("texto").style.top = "30%";
-		  document.getElementById("texto").style.left = "1%";
-		  document.getElementById("texto").style.right = "4%";
-		   document.getElementById("texto").style.fontSize="14px";
-		}
-		function donaLucinha() {
-		  document.getElementById('imagem2').src = "dadosGerais.jpg";
-		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Dados Gerais</p></strong>Área da unidade territorial: 1.245,865 km²<br>Localização<br>A cidade está na Serra do Espinhaço, na Zona Metalúrgica de Minas Gerais (Quadrilátero Ferrífero). Está na Região Central da Macroregião Metalúrgica e Campo das Vertentes de Minas Gerais.<br>Limites do município<br>Sul: Catas Altas da Noruega, Itaverava, Ouro Branco e Congonhas<br>Oeste: Belo Vale e Moeda<br>Leste: Mariana<br>Norte: Itabirito e Santa Bárbara<br>População (Dados do Censo 2000 - IBGE)<br>Pessoas residentes: 70.281<br>Homens residentes: 34.277<br>Mulheres residentes: 36.004<br>Pessoas residentes área urbana: 56.292<br>Pessoas residentes areal rural: 9.985";
-		  document.getElementById("texto").style.position = 'absolute';
-		  document.getElementById("texto").style.top = "30%";
-		  document.getElementById("texto").style.left = "1%";
-		  document.getElementById("texto").style.right = "4%";
-		  document.getElementById("imagem2").style.position = 'absolute';
-			document.getElementById("imagem2").style.top = "1%";
-			document.getElementById("imagem2").style.left = "8%";
-			document.getElementById("imagem2").style.height = "76%";
-			document.getElementById("imagem2").style.width = "54";
-			 document.getElementById("texto").style.fontSize="14px";
-		}
-		function mariaDasTrancas() {
-		  document.getElementById('imagem2').src = "comoChegar.jpg";
-		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Como Chegar</p></strong>Ouro Preto está situada na Serra do Espinhaço, na Zona Metalúrgica de Minas Gerais (Quadrilátero Ferrífero), na Região Central da Macroregião Metalúrgica e Campo das Vertentes de Minas Gerais.<br>Distâncias<br>Distância de Belo Horizonte – 95 km<br>Aeroporto da Pampulha – 110 km<br>Aeroporto de Confins – 150 km<br>Distância de outras capitais brasileiras:<br>Rio de Janeiro – 467 km ou 417 km (Estrada Real)<br>São Paulo – 745 km<br>Vitória – 624 km";
-		  document.getElementById("texto").style.position = 'absolute';
-		  document.getElementById("texto").style.top = "30%";
-		  document.getElementById("texto").style.left = "1%";
-		  document.getElementById("texto").style.right = "4%";
-		  document.getElementById("imagem2").style.position = 'absolute';
-			document.getElementById("imagem2").style.top = "1%";
-			document.getElementById("imagem2").style.left = "8%";
-			document.getElementById("imagem2").style.height = "76%";
-			document.getElementById("imagem2").style.width = "54";
-			 document.getElementById("texto").style.fontSize="14px";
-		}
-		function xicoDaKafua() {
-		  document.getElementById('imagem2').src = "distritosOuroPreto.jpg";
-		  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Distritos de Ouro Preto</p></strong>A cidade possui 12 distritos:<br> Amarantina<br> Antonio Pereira<br> Cachoeira do Campo<br> Engenheiro Correia<br> Glaura<br> Lavras Novas<br> Miguel Burnier<br> Rodrigo Silva<br> Santa Rita de Ouro Preto<br> Santo Antonio do Leite<br> São Bartolomeu<br> Santo Antônio do Salto";
-		  document.getElementById("texto").style.position = 'absolute';
-		  document.getElementById("texto").style.top = "30%";
-		  document.getElementById("texto").style.left = "1%";
-		  document.getElementById("texto").style.right = "4%";
-		  document.getElementById("imagem2").style.position = 'absolute';
-			document.getElementById("imagem2").style.top = "1%";
-			document.getElementById("imagem2").style.left = "8%";
-			document.getElementById("imagem2").style.height = "76%";
-			document.getElementById("imagem2").style.width = "54";
-			 document.getElementById("texto").style.fontSize="14px";
-		}
-		function carregar() {
-			document.getElementById('imagem2').src = "ouroPretoIndex1.png";
-			document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Ouro Preto</p></strong>Tombada como Patrimônio Cultural da Humanidade pela Unesco, Ouro Preto guarda um conjunto arquitetônico inigualável entre as cidades históricas brasileiras. Os viajantes ficam fascinados ao caminhar pelas inúmeras ladeiras de pedra do Centro, para conhecer o expressivo casario colonial e construções como a Casa dos Contos, o Museu da Inconfidência, a Matriz de Nossa Senhora do Pilar e a Igreja de São Francisco de Assis.";
-			document.getElementById("texto").style.position = 'absolute';
-			document.getElementById("texto").style.top = "30%";
-			document.getElementById("texto").style.left = "1%";
-			document.getElementById("texto").style.right = "4%";
-			document.getElementById("imagem2").style.position = 'absolute';
-			document.getElementById("imagem2").style.top = "1%";
-			document.getElementById("imagem2").style.left = "8%";
-			document.getElementById("imagem2").style.height = "76%";
-			document.getElementById("imagem2").style.width = "54";
-			 document.getElementById("texto").style.fontSize="14px";
-		}
-		function Teclas(){
-			var ctrl=window.event.ctrlKey;
-			var tecla=window.event.keyCode;
-			if (ctrl && tecla==73) {
-				alert("Ctrl + I"); 
-				document.getElementById('txtName').focus();
-				event.keyCode=0; event.returnValue=false;
+		<script type="text/javascript">
+			function xapuri() {
+				document.getElementById("imagem2").style.position = 'absolute';
+				document.getElementById("imagem2").style.top = "1%";
+				document.getElementById("imagem2").style.left = "8%";
+				document.getElementById("imagem2").style.height = "76%";
+				document.getElementById("imagem2").style.width = "54";
+			  document.getElementById('imagem2').src = "historiaOuroPreto.png";
+			  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>História</p></strong>A origem de Ouro Preto está no arraial do Padre Faria, fundado pelo bandeirante Antônio Dias de Oliveira, pelo Padre João de Faria Fialho e pelo Coronel Tomás Lopes de Camargo e um irmão deste, por volta de 1698.<br>Pela junção desses vários arraiais, tornando-se sede de conselho, foi elevada à categoria de vila em 1711 com o nome de Vila Rica. Em 1720 foi escolhida para capital da nova capitania de Minas Gerais. Em 1823, após a Independência do Brasil, Vila Rica recebeu o título de Imperial Cidade, conferido por D. Pedro I do Brasil, tornando-se oficialmente capital da então província das Minas Gerais e passando a ser designada como Imperial Cidade de Ouro Preto.";
+			  document.getElementById("texto").style.position = 'absolute';
+			  document.getElementById("texto").style.top = "30%";
+			  document.getElementById("texto").style.left = "1%";
+			  document.getElementById("texto").style.right = "4%";
+			   document.getElementById("texto").style.fontSize="14px";
 			}
-			if (ctrl && tecla==78) {
-				alert("Ctrl + N");
-				event.keyCode=0; 
-				event.returnValue=false;
+			function donaLucinha() {
+			  document.getElementById('imagem2').src = "dadosGerais.jpg";
+			  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Dados Gerais</p></strong>Área da unidade territorial: 1.245,865 km²<br>Localização<br>A cidade está na Serra do Espinhaço, na Zona Metalúrgica de Minas Gerais (Quadrilátero Ferrífero). Está na Região Central da Macroregião Metalúrgica e Campo das Vertentes de Minas Gerais.<br>Limites do município<br>Sul: Catas Altas da Noruega, Itaverava, Ouro Branco e Congonhas<br>Oeste: Belo Vale e Moeda<br>Leste: Mariana<br>Norte: Itabirito e Santa Bárbara<br>População (Dados do Censo 2000 - IBGE)<br>Pessoas residentes: 70.281<br>Homens residentes: 34.277<br>Mulheres residentes: 36.004<br>Pessoas residentes área urbana: 56.292<br>Pessoas residentes areal rural: 9.985";
+			  document.getElementById("texto").style.position = 'absolute';
+			  document.getElementById("texto").style.top = "30%";
+			  document.getElementById("texto").style.left = "1%";
+			  document.getElementById("texto").style.right = "4%";
+			  document.getElementById("imagem2").style.position = 'absolute';
+				document.getElementById("imagem2").style.top = "1%";
+				document.getElementById("imagem2").style.left = "8%";
+				document.getElementById("imagem2").style.height = "76%";
+				document.getElementById("imagem2").style.width = "54";
+				 document.getElementById("texto").style.fontSize="14px";
 			}
-			if (ctrl && tecla==68) {
-				alert("Ctrl + D");
-				event.keyCode=0; 
-				event.returnValue=false;
+			function mariaDasTrancas() {
+			  document.getElementById('imagem2').src = "comoChegar.jpg";
+			  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Como Chegar</p></strong>Ouro Preto está situada na Serra do Espinhaço, na Zona Metalúrgica de Minas Gerais (Quadrilátero Ferrífero), na Região Central da Macroregião Metalúrgica e Campo das Vertentes de Minas Gerais.<br>Distâncias<br>Distância de Belo Horizonte – 95 km<br>Aeroporto da Pampulha – 110 km<br>Aeroporto de Confins – 150 km<br>Distância de outras capitais brasileiras:<br>Rio de Janeiro – 467 km ou 417 km (Estrada Real)<br>São Paulo – 745 km<br>Vitória – 624 km";
+			  document.getElementById("texto").style.position = 'absolute';
+			  document.getElementById("texto").style.top = "30%";
+			  document.getElementById("texto").style.left = "1%";
+			  document.getElementById("texto").style.right = "4%";
+			  document.getElementById("imagem2").style.position = 'absolute';
+				document.getElementById("imagem2").style.top = "1%";
+				document.getElementById("imagem2").style.left = "8%";
+				document.getElementById("imagem2").style.height = "76%";
+				document.getElementById("imagem2").style.width = "54";
+				 document.getElementById("texto").style.fontSize="14px";
 			}
-		}
-	</script>
-</body>
+			function xicoDaKafua() {
+			  document.getElementById('imagem2').src = "distritosOuroPreto.jpg";
+			  document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Distritos de Ouro Preto</p></strong>A cidade possui 12 distritos:<br> Amarantina<br> Antonio Pereira<br> Cachoeira do Campo<br> Engenheiro Correia<br> Glaura<br> Lavras Novas<br> Miguel Burnier<br> Rodrigo Silva<br> Santa Rita de Ouro Preto<br> Santo Antonio do Leite<br> São Bartolomeu<br> Santo Antônio do Salto";
+			  document.getElementById("texto").style.position = 'absolute';
+			  document.getElementById("texto").style.top = "30%";
+			  document.getElementById("texto").style.left = "1%";
+			  document.getElementById("texto").style.right = "4%";
+			  document.getElementById("imagem2").style.position = 'absolute';
+				document.getElementById("imagem2").style.top = "1%";
+				document.getElementById("imagem2").style.left = "8%";
+				document.getElementById("imagem2").style.height = "76%";
+				document.getElementById("imagem2").style.width = "54";
+				 document.getElementById("texto").style.fontSize="14px";
+			}
+			function carregar() {
+				document.getElementById('imagem2').src = "ouroPretoIndex1.png";
+				document.getElementById("texto").innerHTML="<strong><p class='espacamendo'>Ouro Preto</p></strong>Tombada como Patrimônio Cultural da Humanidade pela Unesco, Ouro Preto guarda um conjunto arquitetônico inigualável entre as cidades históricas brasileiras. Os viajantes ficam fascinados ao caminhar pelas inúmeras ladeiras de pedra do Centro, para conhecer o expressivo casario colonial e construções como a Casa dos Contos, o Museu da Inconfidência, a Matriz de Nossa Senhora do Pilar e a Igreja de São Francisco de Assis.";
+				document.getElementById("texto").style.position = 'absolute';
+				document.getElementById("texto").style.top = "30%";
+				document.getElementById("texto").style.left = "1%";
+				document.getElementById("texto").style.right = "4%";
+				document.getElementById("imagem2").style.position = 'absolute';
+				document.getElementById("imagem2").style.top = "1%";
+				document.getElementById("imagem2").style.left = "8%";
+				document.getElementById("imagem2").style.height = "76%";
+				document.getElementById("imagem2").style.width = "54";
+				 document.getElementById("texto").style.fontSize="14px";
+			}
+			function Teclas(){
+				var ctrl=window.event.ctrlKey;
+				var tecla=window.event.keyCode;
+				if (ctrl && tecla==72) {
+					document.getElementById('indexAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==80) {
+					document.getElementById('turismoAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==71) {
+					document.getElementById('gastronomiaAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==70) {
+					document.getElementById('feiraAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==82) {
+					document.getElementById('restauranteAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==65) {
+					document.getElementById('historiaAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==68) {
+					document.getElementById('geraisAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==67) {
+					document.getElementById('chegarAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==79) {
+					document.getElementById('distritoAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+			}
+		</script>
+	</body>
 </html>
