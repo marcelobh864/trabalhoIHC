@@ -22,8 +22,9 @@
 				letter-spacing: 0.2em;
 			}
 			.imagem{
-				height: 80%;
-				width: 80%;
+				height: 65%;
+				width: 72%;
+				padding-top: 4%;
 			}
 			#imagem2{
 				padding-top: 4%;
@@ -128,7 +129,7 @@
 	</head>
 	<body onload="carregar()" onKeyDown="Teclas()">
 		<div id="corpo">
-			<div id="logo"><center><a href="index.html"><img class="imagem" src="brasao1.jpg"/></a></center></div>
+			<div id="logo"><center><a href="index.html"><img class="imagem" src="brasao2.jpg"/></a></center></div>
 			<div id="topo">
 				<h1>Ouro Preto</h1>
 				<div id="menu">
@@ -143,11 +144,11 @@
 			</div>
 			<div id="lateral">
 				<ul>
-					<li><a href="#"onclick="feiraAfonsoPena();">Feira De Pedra Sabão Do Largo De Coimbra
+					<li><a href="#"onclick="feiraAfonsoPena();" id="coimbraAjuda">F<u>e</u>ira De Pedra Sabão Do Largo De Coimbra
 	</a></li>
-					<li><a href="#"onclick="feiraLargoCoimbra();">Cachaçaria Milagre de Minas</a></li>
-					<li><a href="#"onclick="feiraPocosCaldas();">Rocalha Artesanatos</a></li>
-					<li><a href="#"onclick="mercadoBeloHorizonte();">Josimar Guimarães Escritório de Arte</a></li>
+					<li><a href="#"onclick="feiraLargoCoimbra();" id="minasAjuda"><u>C</u>achaçaria Milagre de Minas</a></li>
+					<li><a href="#"onclick="feiraPocosCaldas();" id="rocalhaAjuda">R<u>o</u>calha Artesanatos</a></li>
+					<li><a href="#"onclick="mercadoBeloHorizonte();" id="josimarAjuda"><u>J</u>osimar Guimarães Escritório de Arte</a></li>
 				</ul>
 			</div>
 			<div id="centro">
@@ -251,20 +252,20 @@
 					document.getElementById('restauranteAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
-				if (ctrl && tecla==65) {
-					document.getElementById('historiaAjuda').focus();
-					event.keyCode=0; event.returnValue=false;
-				}
-				if (ctrl && tecla==68) {
-					document.getElementById('geraisAjuda').focus();
+				if (ctrl && tecla==69) {
+					document.getElementById('coimbraAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
 				if (ctrl && tecla==67) {
-					document.getElementById('chegarAjuda').focus();
+					document.getElementById('minasAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
 				if (ctrl && tecla==79) {
-					document.getElementById('distritoAjuda').focus();
+					document.getElementById('rocalhaAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==74) {
+					document.getElementById('josimarAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
 			}

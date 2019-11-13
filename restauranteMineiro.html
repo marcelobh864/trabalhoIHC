@@ -22,8 +22,9 @@
 				letter-spacing: 0.2em;
 			}
 			.imagem{
-				height: 80%;
-				width: 80%;
+				height: 65%;
+				width: 72%;
+				padding-top: 4%;
 			}
 			#imagem2{
 				padding-top: 4%;
@@ -85,7 +86,7 @@
 				display: block;
 				text-decoration: none;
 				margin-bottom: 15%;
-				padding-bottom: 2%;
+				padding-bottom: 4%;
 				color:  #daa520;
 				font-size: 17px;
 				font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
@@ -128,7 +129,7 @@
 	</head>
 	<body onload="carregar()" onKeyDown="Teclas()">
 		<div id="corpo">
-			<div id="logo"><center><a href="index.html"><img class="imagem" src="brasao1.jpg"/></a></center></div>
+			<div id="logo"><center><a href="index.html"><img class="imagem" src="brasao2.jpg"/></a></center></div>
 			<div id="topo">
 				<h1>Ouro Preto</h1>
 				<div id="menu">
@@ -143,12 +144,11 @@
 			</div>
 			<div id="lateral">
 				<ul>
-					<li><a href="#"onclick="xapuri();">Bené da Flauta</a></li>
-					<li><a href="#"onclick="donaLucinha();">Casa do Ouvidor</a></li>
-					<li><a href="#"onclick="mariaDasTrancas();">Café Geraes/Escadabaixo</a></li>
-					<li><a href="#"onclick="xicoDaKafua();">Senhora Gastronomia</a></li>
-					<li><a href="#"onclick="casaCheia();">Tenente Pimenta Rock Bar</a></li>
-					<li><a href="#"onclick="fasDeConta();">Loja da Fábrica Ouropretana</a></li>
+					<li><a href="#"onclick="xapuri();" id="beneAjuda"><u>B</u>ené da Flauta</a></li>
+					<li><a href="#"onclick="donaLucinha();" id="casaAjuda">Casa do Ou<u>v</u>idor</a></li>
+					<li><a href="#"onclick="mariaDasTrancas();" id="cafeAjuda">Café Geraes/Escadabai<u>x</u>o</a></li>
+					<li><a href="#"onclick="xicoDaKafua();" id="senhoraAjuda">Senhora Gastronom<u>i</u>a</a></li>
+					<li><a href="#"onclick="casaCheia();" id="tenenteAjuda">Tenente Pimenta Ro<u>c</u>k Bar</a></li>
 				</ul>
 			</div>
 			<div id="centro">
@@ -280,20 +280,28 @@
 					document.getElementById('restauranteAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
-				if (ctrl && tecla==65) {
-					document.getElementById('historiaAjuda').focus();
+				if (ctrl && tecla==66) {
+					document.getElementById('beneAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
-				if (ctrl && tecla==68) {
-					document.getElementById('geraisAjuda').focus();
+				if (ctrl && tecla==86) {
+					document.getElementById('casaAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==88) {
+					document.getElementById('cafeAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==73) {
+					document.getElementById('senhoraAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
 				if (ctrl && tecla==67) {
-					document.getElementById('chegarAjuda').focus();
+					document.getElementById('tenenteAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
-				if (ctrl && tecla==79) {
-					document.getElementById('distritoAjuda').focus();
+				if (ctrl && tecla==76 && tecla==79) {
+					document.getElementById('lojaAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
 			}

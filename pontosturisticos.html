@@ -22,8 +22,9 @@
 				letter-spacing: 0.2em;
 			}
 			.imagem{
-				height: 80%;
-				width: 80%;
+				height: 65%;
+				width: 72%;
+				padding-top: 4%;
 			}
 			#imagem2{
 				padding-top: 4%;
@@ -128,7 +129,7 @@
 	</head>
 	<body onload="carregar()" onKeyDown="Teclas()">
 		<div id="corpo">
-			<div id="logo"><center><a href="index.html"><img class="imagem" src="brasao1.jpg"/></a></center></div>
+			<div id="logo"><center><a href="index.html"><img class="imagem" src="brasao2.jpg"/></a></center></div>
 			<div id="topo">
 				<h1>Ouro Preto</h1>
 				<div id="menu">
@@ -143,11 +144,11 @@
 			</div>
 			<div id="lateral">
 				<ul>
-					<li><a href="#"onclick="cidadeOuroPreto();">Igreja de Nossa Senhora do Carmo</a></li>
-					<li><a href="#"onclick="cidadeDiamantina();">Igreja de Nossa Senhora do Pilar</a></li>
-					<li><a href="#"onclick="cidadeSabara();">Parque das Andorinhas de Ouro Preto</a></li>
-					<li><a href="#"onclick="cidadeSaoJoaoDelRey();">Trem da Vale Ouro Preto – Maria Fumaça</a></li>
-					<li><a href="#"onclick="cidadeSerro();">Mina da Passagem</a></li>
+					<li><a href="#"onclick="cidadeOuroPreto();" id="carmoAjuda"><u>I</u>greja de Nossa Senhora do Carmo</a></li>
+					<li><a href="#"onclick="cidadeDiamantina();" id="pilarAjuda">Igr<u>e</u>ja de Nossa Senhora do Pilar</a></li>
+					<li><a href="#"onclick="cidadeSabara();" id="parqueAjuda"><u>P</u>arque das Andorinhas de Ouro Preto</a></li>
+					<li><a href="#"onclick="cidadeSaoJoaoDelRey();" id="tremAjuda">Tre<u>m</u> da Vale Ouro Preto – Maria Fumaça</a></li>
+					<li><a href="#"onclick="cidadeSerro();" id="minaAjuda">Mina da Pa<u>s</u>sagem</a></li>
 				</ul>
 			</div>
 			<div id="centro">
@@ -268,20 +269,24 @@
 					document.getElementById('restauranteAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
-				if (ctrl && tecla==65) {
-					document.getElementById('historiaAjuda').focus();
+				if (ctrl && tecla==73) {
+					document.getElementById('carmoAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
-				if (ctrl && tecla==68) {
-					document.getElementById('geraisAjuda').focus();
+				if (ctrl && tecla==69) {
+					document.getElementById('pilarAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
-				if (ctrl && tecla==67) {
-					document.getElementById('chegarAjuda').focus();
+				if (ctrl && tecla==80) {
+					document.getElementById('parqueAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
-				if (ctrl && tecla==79) {
-					document.getElementById('distritoAjuda').focus();
+				if (ctrl && tecla==77) {
+					document.getElementById('tremAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+				if (ctrl && tecla==83) {
+					document.getElementById('minaAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
 			}

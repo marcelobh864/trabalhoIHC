@@ -22,8 +22,9 @@
 				letter-spacing: 0.2em;
 			}
 			.imagem{
-				height: 80%;
-				width: 80%;
+				height: 65%;
+				width: 72%;
+				padding-top: 4%;
 			}
 			#imagem2{
 				padding-top: 4%;
@@ -84,7 +85,7 @@
 				text-align: center;
 				display: block;
 				text-decoration: none;
-				margin-bottom: 25%;
+				margin-bottom: 18%;
 				padding-bottom: 6%;
 				color:  #daa520;
 				font-size: 17px;
@@ -128,9 +129,9 @@
 	</head>
 	<body onload="carregar()" onKeyDown="Teclas()">
 		<div id="corpo">
-			<div id="logo"><center><a href="index.html"><img class="imagem" src="brasao1.jpg"/></a></center></div>
+			<div id="logo"><center><a href="index.html"><img class="imagem" src="brasao2.jpg"/></a></center></div>
 			<div id="topo">
-				<h1> OURO PRETO</h1>
+				<h1> OURO PRETO </h1>
 				<div id="menu">
 					<ul>
 						<li><a href="index.html" id="indexAjuda"> <u>H</u>ome</a></li>
@@ -144,16 +145,16 @@
 			<div id="lateral">
 				<ul>
 					<li><a href="#"onclick="xapuri();" id="historiaAjuda"><u>A</u> História</a></li>
-					<li><a href="#"onclick="donaLucinha();" id="geraisAjuda"><u>D</u>ados Gerais</a></li>
+					<li><a href="#"onclick="donaLucinha();" id="geraisAjuda">Dados Gera<u>i</u>s</a></li>
 					<li><a href="#"onclick="mariaDasTrancas();" id="chegarAjuda"><u>C</u>omo Chegar</a></li>
 					<li><a href="#"onclick="xicoDaKafua();" id="distritoAjuda">Distritos de <u>O</u>uro Preto</a></li>
+					<li><a href="#"onclick="help();" id="helpAjuda">Aju<u>d</u>a <img src="help.png" style="width: 4%; height: 10%;"></a></li>
 				</ul>
 			</div>
 			<div id="centro">
 				<p id="titulo">A Cidade</p>
 				<center><img id="imagem2" src="bares1.jpg"/></center>
 				<p id="texto">Ouro Preto<br>Tombada como Patrimônio Cultural da Humanidade pela Unesco, Ouro Preto guarda um conjunto arquitetônico inigualável entre as cidades históricas brasileiras. Os viajantes ficam fascinados ao caminhar pelas inúmeras ladeiras de pedra do Centro, para conhecer o expressivo casario colonial e construções como a Casa dos Contos, o Museu da Inconfidência, a Matriz de Nossa Senhora do Pilar e a Igreja de São Francisco de Assis.</p>
-				<p id="casoUso"></p>
 			</div>
 		</div>
 		<script type="text/javascript">
@@ -254,7 +255,7 @@
 					document.getElementById('historiaAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
-				if (ctrl && tecla==68) {
+				if (ctrl && tecla==73) {
 					document.getElementById('geraisAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
@@ -266,6 +267,14 @@
 					document.getElementById('distritoAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
+				if (ctrl && tecla==68) {
+					document.getElementById('helpAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+			}
+			function help()
+			{
+				alert("Eu sou um\nAlert!");
 			}
 		</script>
 	</body>
