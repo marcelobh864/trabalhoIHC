@@ -85,7 +85,7 @@
 				text-align: center;
 				display: block;
 				text-decoration: none;
-				margin-bottom: 15%;
+				margin-bottom: 12%;
 				padding-bottom: 4%;
 				color:  #daa520;
 				font-size: 17px;
@@ -149,13 +149,13 @@
 					<li><a href="#"onclick="mariaDasTrancas();" id="cafeAjuda">Café Geraes/Escadabai<u>x</u>o</a></li>
 					<li><a href="#"onclick="xicoDaKafua();" id="senhoraAjuda">Senhora Gastronom<u>i</u>a</a></li>
 					<li><a href="#"onclick="casaCheia();" id="tenenteAjuda">Tenente Pimenta Ro<u>c</u>k Bar</a></li>
+					<li><a href="#"onclick="help();" id="helpAjuda">Aju<u>d</u>a <img src="help.png" style="width: 4%; height: 10%;"></a></li>
 				</ul>
 			</div>
 			<div id="centro">
 				<p id="titulo">Restaurantes e Bares de Ouro Preto</p>
 				<center><img id="imagem2" src="bares1.jpg"/></center>
 				<p id="texto">"Oh! Minas Gerais <br>Oh! Minas Gerais<br>Quem te conhece não esquece jamais<br>Oh! Minas Gerais"<br>Tonico e Tinoco</p>
-				<p id="casoUso"></p>
 			</div>
 		</div>
 		<script type="text/javascript">
@@ -304,6 +304,14 @@
 					document.getElementById('lojaAjuda').focus();
 					event.keyCode=0; event.returnValue=false;
 				}
+				if (ctrl && tecla==68) {
+					document.getElementById('helpAjuda').focus();
+					event.keyCode=0; event.returnValue=false;
+				}
+			}
+			function help()
+			{
+				alert("Está é a tela principal do site, no topo desta tela tem links para as outras telas do sistema, na lateral desta pagina tem links que trazem informações sobre a cidade de Ouro Preto, informações importantes sobre a cidade de Ouro Preto como a historia de Ouro Preto, Dados Gerais, Como chegar na cidade e também fala sobre os distritos de Ouro Preto.\nTeclas de navegação do site:\nCTRL + H vai para o link Home que é a pagina principal do site. \nCTRL + P leva para a tela dos pontos turisticos de Ouro Preto. \nCRTL + G leva para tela da Gastronomia de Ouro Preto. \nCRTL + F leva para tela da Feiras e Mercados de Ouro Preto. \nCRTL + R leva para tela da Restaurantes e Bares de Ouro Preto. \nCRTL + Este link fala da Historia de Ouro Preto. \nCRTL + I Este link fala sobre Dados Gerais de Ouro Preto. \nCRTL + C Este link fala de como chegar em Ouro Preto. \nCRTL + O Este link fala sobre os distritos de Ouro Preto. \nCRTL + D Este link leva para a ajuda do site.");
 			}
 		</script>
 	</body>
